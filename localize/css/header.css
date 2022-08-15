@@ -1,0 +1,70 @@
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	background: #FFFFFF;
+	padding: 25px 0;
+}
+
+.header__item-left {
+	display: flex;
+	column-gap: 51px;
+	align-items: center;
+}
+
+.header__navigation ul {
+	display: flex;
+	column-gap: 57px;
+}
+
+.header__navigation a {
+	font-family: 'Graphik LC TT';
+	font-weight: 400;
+	font-size: 0.9375rem;
+	line-height: 20px;
+	color: #000000;
+	transition: all ease-in-out 0.3s;
+}
+.header__navigation a:hover {
+	color: #FF6336;
+}
+
+.header__item-right {
+	display: flex;
+	column-gap: 10px;
+	align-items: center;
+}
+
+.header__item-login-btn {
+	line-height: 45px;
+	padding: 0 36px;
+	font-size: 1rem;
+	transition: all ease-in-out 0.3s;
+}
+
+.header__item-login-btn:hover {
+	background-color: #FF6336;
+	color: #ffffff;
+	border:  1px solid #ffffff;
+}
+
+.header__item-tryit-btn {
+	line-height: 45px;
+	padding: 0 21px 0 22px;
+	font-size: 1rem;
+	transition: all ease-in-out 0.3s;
+}
+
+.header__item-tryit-btn:hover {
+	color: #000000;
+	background-color: #FFFFFF;
+	border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.main::before {
+	content: '';
+	display: block;
+	background-color:#E5E5E5;;
+	height: 1px;
+}
+
