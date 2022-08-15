@@ -1,0 +1,128 @@
+@import "variables"
+@import 'mixins'
+
+.burger
+  z-index: 3
+  position: fixed
+  @include tran
+  & .accordion-burger
+    --bs-accordion-transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out,border-radius 0.15s ease
+    --bs-accordion-btn-padding-x: 1.25rem
+    --bs-accordion-btn-padding-y: 1rem
+    --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='var%28--bs-body-color%29'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")
+    --bs-accordion-btn-icon-width: 1.25rem
+    --bs-accordion-btn-icon-transform: rotate(180deg)
+    --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out
+    --bs-accordion-body-padding-x: 1.25rem
+    --bs-accordion-body-padding-y: 1rem
+    &-button
+      position: relative
+      z-index: 10
+      display: flex
+      align-items: center
+      justify-content: center
+      column-gap: 20px
+      padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x)
+      border: 0
+      border-radius: 0
+      overflow-anchor: none
+      transition: var(--bs-accordion-transition)
+      &::after
+        flex-shrink: 0
+        width: var(--bs-accordion-btn-icon-width)
+        height: var(--bs-accordion-btn-icon-width)
+        content: ""
+        background-image: var(--bs-accordion-btn-icon)
+        background-repeat: no-repeat
+        background-size: var(--bs-accordion-btn-icon-width)
+        transition: var(--bs-accordion-btn-icon-transition)
+      &:hover
+        background: linear-gradient(165.12deg, #E6F5F5 2.79%, #EDFFF7 92.17%), #FFFFFF
+  &__container
+    @include tran
+    width: 100%
+    transform: translateX(100%)
+    height: 100vh
+    max-width: 80%
+    opacity: 0
+    pointer-events: none
+    position: fixed
+    left: 20%
+    top: 0%
+    overflow: hidden
+    background-color: $footerBg
+    padding: 64px 12px
+  &.show .burger__container
+    opacity: 1
+    transform: translateX(0)
+    pointer-events: initial
+    @include tran
+  &__item a
+    @include text (600, 1.5rem, 1.8125rem, $mainBlack)
+    text-align: center
+    display: block
+    padding: 15px 0
+    @include bgBlueGradient
+  &__item a:hover, &__item a:active, &__item a:focus
+    color: $mainGreen
+
+  &.show
+    top: 0
+  &__list-menu
+    display: none
+    @media screen and (max-width: 768px)
+      display: block
+      height: 65vh
+    & li
+      margin: 5px 0
+.menu__btn
+  z-index: 23
+  position: absolute
+  right: 52px
+  top: 54.5px
+  width: 30px
+  height: 30px
+  overflow: hidden
+  display: none
+  @media screen and (max-width: 768px)
+    display: block
+  @media screen and (max-width: 767px)
+    right: 21px
+    top: 34.5px
+  & span
+    width: 30px
+    height: 2px
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    background-color: $mainBlack
+    @include tran
+    &:nth-of-type(2)
+      top: calc(50% - 8px)
+    &:nth-of-type(3)
+      top: calc(50% + 8px)
+  &.active span:nth-of-type(1)
+    display: none
+  &.active span:nth-of-type(2)
+    top: 50%
+    transform: translate(-50%, 0%) rotate(45deg)
+    background-color: $colorWhite
+  &.active span:nth-of-type(3)
+    top: 50%
+    transform: translate(-50%, 0%) rotate(-45deg)
+    background-color: $colorWhite
+.fixed
+  overflow: hidden
+  width: 100%
+.scroll
+  overflow: auto
+
+#menu__toggle
+  opacity: 0
+
+
+
+
+
+

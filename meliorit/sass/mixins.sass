@@ -1,0 +1,71 @@
+@mixin cardBg ($borRad)
+  background: linear-gradient(0deg, rgba(23, 37, 35, 0.92), rgba(23, 37, 35, 0.92))
+  border-radius: $borRad
+
+@mixin greenCardBg ($borRad)
+  background: linear-gradient(0deg, #1EC6A7, #1EC6A7)
+  border-radius: $borRad
+
+@mixin text ($fw, $fz, $lh, $col)
+  font: $fw normal $fz 'Nunito Sans'
+  line-height: $lh
+  color: $col
+
+@mixin boldText ($fz, $lh, $col)
+  font: 900 normal $fz 'Inter'
+  line-height: $lh
+  color: $col
+
+@mixin boldText ($fw, $fz, $lh, $col)
+  font: $fw normal $fz 'Inter'
+  line-height: $lh
+  color: $col
+
+@mixin fooText ($fz, $lh, $col)
+  font: 400 normal $fz 'Nunito Sans'
+  line-height: $lh
+  color: $col
+
+@mixin bgBlueGradient
+  background: linear-gradient(165.12deg, #E6F5F5 2.79%, #EDFFF7 92.17%), #FFFFFF
+
+@mixin buttonGreen
+  padding: 10px
+  background-color: $mainGreen
+  border-radius: 5px
+
+@mixin buttonHover
+  background-color: $buttonHover
+  color: $colorWhite
+  box-shadow: 1px 1px 10px $buttonShadow inset
+
+@mixin tran
+  transition: all ease-in-out 0.3s
+
+@mixin footer-icons ($bg_img)
+  content: ''
+  display: block
+  width: 18px
+  height: 18px
+  background-image: url($bg_img)
+  position: absolute
+  top: 2px
+  left: -24px
+
+@mixin sublist-menu ($left, $width)
+  display: none
+  position: absolute
+  top: 15px
+  left: $left
+  width: $width
+  padding: 15px 0 0 0
+  z-index: 3
+  & > li
+    background: linear-gradient(165.12deg, #E6F5F5 2.79%, #EDFFF7 92.17%), #FFFFFF
+    padding: 10px
+    @include tran
+    &:hover
+      box-shadow: inset 1px 1px 10px 1px rgba(30,198,167,0.2)
+      @include tran
+    & a:hover
+      color: $mainBlack

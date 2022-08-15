@@ -1,0 +1,659 @@
+@import 'font'
+@import 'reset'
+@import 'mixins'
+@import "swiper-popular"
+@import "variables"
+@import "burger"
+
+//*
+  border: 1px solid red
+
+.containerMain
+  max-width: 1750px
+  padding: 0 15px
+  margin: 0 auto
+  @media screen and (max-width: 1600px)
+    max-width: 1430px
+  @media screen and (max-width: 1440px)
+    max-width: 1270px
+  @media screen and (max-width: 1366px)
+    max-width: 1196px
+  @media screen and (max-width: 1280px)
+    max-width: 1110px
+  @media screen and (max-width: 1024px)
+    max-width: 854px
+  @media screen and (max-width: 768px)
+    max-width: 698px
+
+.header
+  @include bgBlueGradient
+  &__container
+    padding: 50px 0
+    display: flex
+    justify-content: space-between
+    @media screen and (max-width: 1024px)
+      display: block
+    @media screen and (max-width: 768px)
+      padding: 50px 0 0 0
+    @media screen and (max-width: 767px)
+      padding: 30px 0 0 0
+  &__item
+    display: flex
+    align-items: flex-start
+    @media screen and (max-width: 768px)
+      display: block
+    &.nav
+      @media screen and (max-width: 1024px)
+        justify-content: space-between
+      @media screen and (max-width: 768px)
+        justify-content: flex-start
+    &.logo
+      @media screen and (max-width: 1024px)
+        margin-bottom: 20px
+    &-list
+      display: flex
+      align-items: center
+      column-gap: 30px
+      position: relative
+      @media screen and (max-width: 1366px)
+        column-gap: 10px
+      @media screen and (max-width: 768px)
+        display: none
+      & li:first-of-type:hover .header__item-sublistDisplays
+        display: block
+      & li:nth-of-type(3):hover .header__item-sublistBlog
+        display: block
+      & li:last-of-type:hover .header__item-sublistCompany
+        display: block
+      & li a
+        @include text (600, 1rem, 1.375rem, $mainBlack)
+        @include tran
+        &:hover
+          color: $buttonHover
+          @include tran
+        & svg
+          margin-left: 15px
+          stroke: $mainGreen
+          @media screen and (max-width: 1366px)
+            margin-left: 0px
+          &:hover
+            stroke: $buttonHover
+            @include tran
+
+    &-favorite svg
+      fill: $mainBlack
+      @include tran
+      &:hover
+        fill: $buttonHover
+        @include tran
+    &-basket svg
+      fill: $mainBlack
+      @include tran
+      &:hover
+        fill: $buttonHover
+        @include tran
+    &-sublistDisplays
+      @include sublist-menu (-10px, 189px)
+    &-sublistBlog
+      @include sublist-menu (387px, 150px)
+      @media screen and (max-width: 1366px)
+        left: 332px
+      @media screen and (max-width: 1280px)
+        left: 331px
+    &-sublistCompany
+      @include sublist-menu (481px, 150px)
+      @media screen and (max-width: 1366px)
+        left: 392px
+      @media screen and (max-width: 1280px)
+        left: 392px
+    &-img
+      &:after
+        content: ''
+        display: inline-block
+        background-color: $footerText
+        width: 1px
+        height: 30px
+        margin: 0 20px
+        @media screen and (max-width: 1366px)
+          margin: 0 10px
+        @media screen and (max-width: 768px)
+          display: none
+      & img
+        @media screen and (max-width: 768px)
+          margin-bottom: 5px
+    &-info
+      @include fooText (0.875rem, 0.875rem, $footerText)
+      max-width: 200px
+      overflow: hidden
+    &-shoppingBlock
+      display: flex
+      align-items: center
+      column-gap: 35px
+      margin-left: 35px
+      @media screen and (max-width: 1366px)
+        column-gap: 10px
+        margin-left: 20px
+      @media screen and (max-width: 768px)
+        margin-left: 0px
+  &-child
+    padding: 85px 0 195px 0
+    @media screen and (max-width: 768px)
+      padding-bottom: 100px
+    @media screen and (max-width: 767px)
+      padding: 30px 0 30px 0
+    &-container
+      display: flex
+      justify-content: space-between
+      align-items: center
+    &-item
+      max-width: 730px
+      overflow: hidden
+      @media screen and (max-width: 1366px)
+        max-width: 520px
+      &.info-block
+        @media screen and (max-width: 1024px)
+          position: relative
+          z-index: 1
+      & img
+        position: absolute
+        top: 85px
+        right: 102px
+        z-index: 0
+        @media screen and (max-width: 1530px)
+          width: 700px
+          top: 85px
+          right: 67px
+        @media screen and (max-width: 1440px)
+          width: 600px
+          right: 102px
+        @media screen and (max-width: 1024px)
+          width: 80%
+          top: 155px
+          opacity: 0.4
+        @media screen and (max-width: 768px)
+          width: 86%
+          right: 52px
+        @media screen and (max-width: 767px)
+          display: none
+      &-label
+        @include boldText (900, 4.5rem, 4.0625rem, $mainBlack)
+        letter-spacing: -0.025em
+        margin-bottom: 30px
+        @media screen and (max-width: 1366px)
+          @include boldText (900, 4rem, 4.0625rem, $mainBlack)
+        @media screen and (max-width: 767px)
+          @include boldText (900, 2.5rem, 2.5rem, $mainBlack)
+
+        & span
+          color: $mainGreen
+          @media screen and (max-width: 1024px)
+            filter: drop-shadow(1px 1px 1px $buttonShadow)
+
+
+    &-text
+      @include text (400, 1.125rem, 1.5625rem, $mainBlack)
+      margin-bottom: 30px
+      max-width: 555px
+      overflow: hidden
+    &-button
+      @include buttonGreen
+      display: block
+      max-width: fit-content
+      @include text (400, 1.125rem, 1.4375rem, $colorWhite)
+      @include tran
+      &:hover
+        @include buttonHover
+        @include tran
+
+.main
+  &__help
+    background-color: $colorWhite
+    padding: 28px 0 59px 0
+    @media screen and (max-width: 767px)
+      padding: 28px 0 30px 0
+    &-container
+      display: flex
+      justify-content: center
+      align-items: center
+      column-gap: 82px
+      @media screen and (max-width: 1024px)
+        column-gap: 20px
+      @media screen and (max-width: 767px)
+        display: block
+    &-item
+      &.picture
+        width: 583px
+        height: 507px
+        display: flex
+        justify-content: center
+        align-items: center
+        @media screen and (max-width: 767px)
+          width: 280px
+          height: auto
+          margin: auto
+        & img
+          width: 100%
+      &.form
+        width: 450px
+        height: 389px
+        box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1)
+        @media screen and (max-width: 767px)
+          width: 280px
+          height: auto
+          margin: auto
+        & form
+          padding: 58px
+          @media screen and (max-width: 768px)
+            padding: 30px
+          @media screen and (max-width: 767px)
+            padding: 10px
+      &-label
+        @include boldText (900, 2.75rem, 2.475rem, $mainBlack)
+        margin-bottom: 29px
+        @media screen and (max-width: 1366px)
+          font-size: 2.5rem
+        @media screen and (max-width: 1024px)
+          font-size: 2.2rem
+          line-height: 2rem
+        @media screen and (max-width: 767px)
+          font-size: 1.8rem
+          line-height: 1.8rem
+
+      &-text
+        @include text (400, 1.125rem, 1.5343rem, $mainBlack)
+        margin-bottom: 29px
+      &-subitem
+        display: flex
+        justify-content: space-between
+        align-items: center
+        @media screen and (max-width: 1024px)
+          display: block
+        & input
+          border: 1px solid $footerText
+          border-radius: 6px
+          background-color: $colorWhite
+          height: 45px
+          width: 106px
+          overflow: hidden
+          padding: 10px
+          @include tran
+          @media screen and (max-width: 1024px)
+            width: 100%
+            margin-bottom: 20px
+          &:hover
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1) inset
+            @include tran
+          &:focus
+            border: 1px solid $buttonHover
+            @include tran
+        & button
+          @include buttonGreen
+          @include text (400, 1.125rem, 1.4375rem, $colorWhite)
+          @include tran
+          &:hover
+            @include buttonHover
+            @include tran
+          @media screen and (max-width: 1024px)
+            width: 100%
+  &__popular
+    position: relative
+    background-color: $colorBgSection
+    padding: 80px 0
+    @media screen and (max-width: 768px)
+      padding: 40px 0
+    @media screen and (max-width: 767px)
+      padding: 30px 0
+    &-header
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin-bottom: 65px
+      @media screen and (max-width: 768px)
+        margin-bottom: 35px
+      @media screen and (max-width: 767px)
+        display: block
+      &-label
+        @include boldText (900, 2.75rem, 2.5rem, $mainBlack)
+        @media screen and (max-width: 768px)
+          width: 50%
+        @media screen and (max-width: 767px)
+          margin-bottom: 10px
+        @media screen and (max-width: 767px)
+          font-size: 1.8rem
+          line-height: 1.8rem
+      &-link
+        @include text (400, 1.125rem, 1.5625rem, $mainGreen)
+        @include tran
+        &:hover
+          color: $buttonHover
+          @include tran
+
+    &-item
+      padding: 30px
+      max-width: 25%
+      background-color: $colorWhite
+      box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.16)
+      border-radius: 5px
+      @media screen and (max-width: 1024px)
+        max-width: 33.333%
+      @media screen and (max-width: 1024px)
+        max-width: 50%
+      @media screen and (max-width: 767px)
+        max-width: 100%
+
+      &-label
+        @include boldText (600, 1.875rem, 2.25rem, $mainBlack)
+        margin-bottom: 10px
+      &-desc
+        @include text (400, 1.125rem, 1.125rem, $mainBlack)
+        margin-bottom: 28px
+        height: 100px
+        overflow: hidden
+        @media screen and (max-width: 1024px)
+          height: 55px
+      &-img
+        max-width: 230px
+        height: 84px
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-bottom: 35px
+        & img
+          max-width: 100%
+          object-fit: contain
+    &-button
+      @include buttonGreen
+      max-width: fit-content
+      display: flex
+      margin-left: auto
+      @include text (400, 1.125rem, 1.4375rem, $colorWhite)
+      @include tran
+      &:hover
+        @include buttonHover
+        @include tran
+    &-subitem
+      display: flex
+      justify-content: space-between
+      align-items: flex-start
+      column-gap: 20px
+      &-label
+        @include text (400, 0.75rem, 0.75rem, $footerBg)
+        margin-bottom: 4px
+      &-info
+        @include text (700, 1.125rem, 1.5343rem, $footerBg)
+        @media screen and (max-width: 1440px)
+          font: 700 normal 0.95rem "Nunito Sans"
+        @media screen and (max-width: 1024px)
+          font: 700 normal 0.8rem "Nunito Sans"
+  &__subscribe
+    position: relative
+    background-color: $colorWhite
+    padding: 80px 0
+    @media screen and (max-width: 768px)
+      padding: 40px 0
+    @media screen and (max-width: 768px)
+      padding: 30px 0
+    &-header
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin-bottom: 35px
+      @media screen and (max-width: 767px)
+        display: block
+      &-label
+        @include boldText (900, 2.75rem, 2.5rem, $mainBlack)
+        @media screen and (max-width: 767px)
+          margin-bottom: 10px
+        @media screen and (max-width: 767px)
+          font-size: 1.8rem
+          line-height: 1.8rem
+      &-link
+        @include text (400, 1.125rem, 1.5625rem, $mainGreen)
+        @include tran
+        &:hover
+          color: $buttonHover
+          @include tran
+    &-item
+      padding: 30px
+      max-width: 33.333%
+      height: 280px
+      background: url('../img/subscribe-img.png') no-repeat bottom right, linear-gradient(165.12deg, #e6f5f5 2.79%, #edfff7 92.17%, #ffffff)
+      border-radius: 5px
+      @media screen and (max-width: 1280px)
+        background: url('../img/subscribe-img.png') no-repeat bottom right, linear-gradient(165.12deg, #e6f5f5 2.79%, #edfff7 92.17%, #ffffff)
+      @media screen and (max-width: 1024px)
+        max-width: 50%
+      @media screen and (max-width: 768px)
+        background: url('../img/subscribe-img.png') no-repeat bottom -32px right -15px, linear-gradient(165.12deg, #e6f5f5 2.79%, #edfff7 92.17%, #ffffff)
+      @media screen and (max-width: 767px)
+        max-width: 100%
+      &-sublabel
+        display: flex
+        justify-content: flex-start
+        column-gap: 10px
+        & p
+          @include boldText (600, 1.875rem, 2.25rem, $mainBlack)
+          margin-bottom: 20px
+          @media screen and (max-width: 768px)
+            font-size: 1.6rem
+      &-desc
+        @include text (400, 1.125rem, 1.125rem, $mainGreen)
+        max-width: 320px
+        height: 70px
+        overflow: hidden
+        @media screen and (max-width: 1366px)
+          width: 203px
+          height: 115px
+          overflow: hidden
+        @media screen and (max-width: 1280px)
+          width: 230px
+        @media screen and (max-width: 767px)
+          height: 165px
+    &-button
+      @include buttonGreen
+      max-width: fit-content
+      display: flex
+      margin-left: auto
+      @include text (400, 1.125rem, 1.4375rem, $colorWhite)
+      @include tran
+      &:hover
+        @include buttonHover
+        @include tran
+  &__questions
+    padding: 80px 0
+    @media screen and (max-width: 1024px)
+      padding-top: 0
+    @media screen and (max-width: 768px)
+      padding-bottom: 40px
+    &-container
+      display: flex
+      justify-content: space-between
+      align-items: flex-start
+      @media screen and (max-width: 768px)
+        display: block
+        width: 100%
+    &-label
+      @include boldText (900, 2.75rem, 2.5rem, $mainBlack)
+      //max-width: 434px
+      overflow: hidden
+      width: 40%
+      @media screen and (max-width: 768px)
+        width: 100%
+        margin-bottom: 35px
+      @media screen and (max-width: 767px)
+        font-size: 1.8rem
+        line-height: 1.8rem
+    &-info
+      width: 60%
+      @media screen and (max-width: 768px)
+        width: 100%
+      &.accordion
+        --bs-accordion-border-color: #1EC6A7
+        --bs-accordion-color: #151515
+        --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgb(39, 215, 184, 20%)
+        --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='var%28--bs-body-color%29'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")
+        --bs-accordion-btn-focus-border-color: #151515
+    &-link
+      @include text (400, 1.125rem, 1.5625rem, $mainGreen)
+      @include tran
+      &:hover
+        color: #00806a
+        @include tran
+    &-item-label
+      @include text (700, 1.25rem, 1.6875rem, $mainBlack)
+      @media screen and (max-width: 767px)
+        @include text (700, 0.8rem, 1rem, $mainBlack)
+      &.accordion-button::after
+        color: $mainBlack
+      &.accordion-button:not(.collapsed)
+        color: $mainBlack
+        background-color: #ffffff
+        box-shadow: none
+        border-bottom: none
+      &.accordion-button:focus
+        border-color: #1EC6A7
+        background: linear-gradient(165.12deg, #E6F5F5 2.79%, #EDFFF7 92.17%), #FFFFFF
+      &.accordion-button:hover
+        background: linear-gradient(165.12deg, #E6F5F5 2.79%, #EDFFF7 92.17%), #FFFFFF
+    &-item-desc
+      @include text (400, 1.125rem, 1.5625rem, $mainBlack)
+      max-width: 740px
+      max-height: fit-content
+      overflow: hidden
+  &__news
+    padding: 80px 0 123px 0
+    @media screen and (max-width: 1024px)
+      padding: 0 0 80px 0
+    @media screen and (max-width: 768px)
+      padding: 0 0 40px 0
+    @media screen and (max-width: 768px)
+      padding: 0 0 10px 0
+    &-label
+      @include boldText (900, 2.75rem, 2.5rem, $mainBlack)
+      margin-bottom: 36px
+      @media screen and (max-width: 767px)
+        font-size: 1.8rem
+        line-height: 1.8rem
+    &-container
+      display: flex
+      align-items: flex-start
+      column-gap: 20px
+      @media screen and (max-width: 1024px)
+        flex-wrap: wrap
+        flex-grow: 0
+        justify-content: space-between
+    &-item
+      width: 20%
+      background: linear-gradient(0deg, rgba(23, 37, 35, 0.92), rgba(23, 37, 35, 0.92)), url("../img/main-image.png")
+      height: 327px
+      border-radius: 6px
+      @media screen and (max-width: 1024px)
+        width: 31.333%
+        margin-bottom: 20px
+      @media screen and (max-width: 768px)
+        width: 48%
+      @media screen and (max-width: 767px)
+        width: 100%
+      &.for-1024
+        @media screen and (max-width: 1024px)
+          width: 48.333%
+          //margin-bottom: 0
+        @media screen and (max-width: 767px)
+          width: 100%
+      &.for-768
+        @media screen and (max-width: 768px)
+          width: 100%
+      &.green-bg
+        background: $mainGreen
+      &-text
+        @include text (700, 1.25rem, 1.6875rem, $colorWhite)
+        padding: 30px
+        @media screen and (max-width: 1280px)
+          @include text (700, 1.1rem, 1.3rem, $colorWhite)
+        @media screen and (max-width: 1280px)
+          @include text (700, 1.25rem, 1.6875rem, $colorWhite)
+        @media screen and (max-width: 1280px)
+          @include text (700, 1.5rem, 1.6875rem, $colorWhite)
+
+.footer
+  background-color: $footerBg
+  padding: 60px 0 40px 0
+  @media screen and (max-width: 767px)
+    padding: 30px 0 30px 0
+  &__container
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    @media screen and (max-width: 1024px)
+      column-gap: 30px
+    @media screen and (max-width: 767px)
+      display: block
+  &__navigation
+    max-height: 170px
+    column-count: 2
+    width: 66.666%
+    @media screen and (max-width: 1024px)
+      column-count: unset
+      width: 50%
+      max-height: fit-content
+    @media screen and (max-width: 767px)
+      width: 100%
+      &:after
+        content: ''
+        display: block
+        background-color: $footerText
+        height: 1px
+        width: 100%
+        margin: 20px 0
+    & li
+      @include text (400, 1rem, 1.375rem, $footerText)
+      padding-bottom: 10px
+      & a
+        color: $footerText
+        @include tran
+        &:hover
+          color: $colorWhite
+          @include tran
+  &__contacts
+    @include text (400, 1rem, 1.375rem, $footerText)
+    @media screen and (max-width: 768px)
+      width: 40%
+    @media screen and (max-width: 767px)
+      width: calc(100% - 20px)
+      margin-left: 20px
+
+    & li
+      position: relative
+      padding-bottom: 10px
+      max-width: 425px
+      @include tran
+      &:first-of-type::before
+        @include footer-icons ('../img/map-pin.png')
+      &:nth-of-type(2)::before
+        @include footer-icons ('../img/phone-call.png')
+      &:nth-of-type(3)::before
+        @include footer-icons ('../img/mail.png')
+      &:last-of-type::before
+        @include footer-icons ('../img/clock.png')
+        padding-bottom: 0
+    & a
+      @include text (400, 1rem, 1.375rem, $footerText)
+      &:hover
+        color: $colorWhite
+        @include tran
+  &__copyright
+    @include text (400, 1rem, 1.375rem, $footerText)
+    text-align: center
+    &:before
+      content: ''
+      display: block
+      background-color: $footerText
+      height: 1px
+      width: 100%
+      margin: 30px 0
+
+
+
+
+
+
