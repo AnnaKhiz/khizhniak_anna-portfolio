@@ -1,0 +1,131 @@
+.footer {
+	padding-top: 59px;
+}
+.footer__category{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	column-gap: 29px;
+}
+.footer__category-item {
+	flex: 1 1 calc((100% - 10%) / 4);
+	
+}
+
+.footer__category-label {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1rem;
+	line-height: 24px;
+	color: #000000;
+	margin-bottom: 23px;
+	max-width: 100%;
+	overflow: hidden;
+}
+.footer__category-line {
+	border-bottom: 1px solid #EFEFEF;
+	margin-bottom: 24px
+}
+.footer__category-list {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 0.75rem;
+	line-height: 28px;
+	
+}
+
+.footer__category-border {
+	border-bottom: 1px solid #EFEFEF;
+	margin-bottom: 37px;
+}
+
+/*-----section 2 contacts-----*/
+
+.footer__contacts {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 38px;
+	
+}
+.footer__flex-item {
+	display: flex;
+}
+
+.footer__contacts-logo img {
+	height: 45px;
+}
+
+.footer__contacts-item {
+	margin-right: 14px;
+}
+
+.icon-abs-yout:hover, .icon-abs-vk:hover, .icon-abs-fb:hover, .icon-abs-insta:hover {
+	filter: drop-shadow(2px 2px 2px rgb(112, 112, 112));
+	transition: all ease-in-out 0.2s;
+}
+
+.footer__category-list a {
+	color: #828282;
+}
+
+.footer__category-list a:hover {
+	color: #c08282;
+}
+
+.pd-t {
+padding-top: 3px;
+}
+
+/*-----section 3 copyright-----*/
+.footer__copyright {
+	padding: 25px 0;
+}
+
+.footer__copyright-flex {
+	display: flex;
+	justify-content: space-between;
+	column-gap: 10px;
+}
+.footer__copyright-info, .footer__copyright-conf {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 0.75rem;
+	line-height: 14px;
+	color: #828282;
+	
+}
+
+.footer__contacts-item {
+	position: relative;
+}
+.contacts-feedback {
+	display: flex;
+}
+
+.icon-abs-yout {
+	position: absolute;
+	top: 14px;
+	left: 11px;
+}
+
+.icon-abs-vk {
+	position: absolute;
+	top: 15px;
+	left: 7px;
+}
+
+.icon-abs-fb {
+	position: absolute;
+	top: 13px;
+	left: 16px;
+}
+
+.icon-abs-insta {
+	position: absolute;
+	top: 12px;
+	left: 12px;
+}
+

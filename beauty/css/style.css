@@ -1,0 +1,104 @@
+@import 'style-null.css';
+@import 'header.css';
+@import 'main.css';
+@import 'footer.css';
+@import 'float.css';
+@import 'adapt.css';
+@import 'modal.css';
+@import 'burger-menu.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.wrapper {
+	max-width: 1140px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.description {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 0.875rem;
+	line-height: 20px;
+	color: #FFFFFF;
+}
+
+.label {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 1.125rem;
+	line-height: 21px;
+	color: #FFFFFF;
+}
+
+.button {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 0.875rem;
+	line-height: 16px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.clearfix::after {
+	clear: both;
+	content: '';
+	display: block;
+}
+
+.center {
+	margin: 0 auto;
+}
+
+.col-l {
+	float: left;
+}
+
+.col-r {
+	float: right;
+}
+
+.bg-col {
+	background-color: #E5E5E5;
+}
+
+.col3 {
+	width: 23%;
+}
+
+.color-link {
+	color: #333333;
+}
+.col6 {
+	width: 48.6%;
+}
+
+.ticket-w {
+	max-width: 231px;
+	width: 100%;
+}
+
+.col4 {
+	width: 24.9%;
+}
+
+.col4-1
+{
+	width: 23%;
+}
+
+.mg-b {
+	margin-bottom: 49px;
+}
+
+.fixed {
+	overflow:hidden;
+	width:100%; 
+	}
+
+	.scroll {
+		overflow: auto;
+		 
+		}

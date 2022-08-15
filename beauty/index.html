@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/style.css">
+	<script src="https://kit.fontawesome.com/bdd2ca727e.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<title>ДЗ 8. Beauty Site. Float.</title>
+</head>
+
+<body>
+
+	<header class="header ">
+
+		<nav class="header__navigation ">
+			<div class="wrapper ">
+				<nav class="header__navigation-list ">
+					<div class="header__navigation-item"><a href="#">Доставка</a></div>
+					<div class="header__navigation-item"><a href="#">Оплата</a></div>
+					<div class="header__navigation-item"><a href="#">Отзывы</a></div>
+					<div class="header__navigation-item"><a href="#">Вопрос - ответ</a></div>
+					<div class="header__navigation-item"><a href="#">Контакты</a></div>
+				</nav>
+			</div>
+		</nav>
+
+
+		<div id="callBurger" class="burger-btn">
+			<input id="menu__toggle" type="checkbox">
+			<label class="menu__btn" for="menu__toggle">
+				<span></span>
+
+			</label>
+		</div>
+
+		<div id="burger" class="burger ">
+			<div class="burger__container ">
+				<nav class="burger__list-menu ">
+					<div class="burger__item"><a href="#">Доставка</a></div>
+					<div class="burger__item"><a href="#">Оплата</a></div>
+					<div class="burger__item"><a href="#">Отзывы</a></div>
+					<div class="burger__item"><a href="#">Вопрос - ответ</a></div>
+					<div class="burger__item"><a href="#">Контакты</a></div>
+				</nav>
+				<div class="burger__contacts ">
+					<a href="#" class="burger__contacts-phone">8 (812) 123-45-67</a>
+					<a href="#" class="burger__contacts-btn">Обратный звонок</a>
+				</div>
+				<nav class="burger__navigation-services ">
+					<div class="burger__navigation-services-item"><a href="#">Парикмахерская</a></div>
+					<div class="burger__navigation-services-item"><a href="#">Барбершоп</a></div>
+					<div class="burger__navigation-services-item"><a href="#">Маникюр</a></div>
+					<div class="burger__navigation-services-item"><a href="#">Педикюр</a></div>
+					<div class="burger__navigation-services-item"><a href="#">Массаж</a></div>
+					<div class="burger__navigation-services-item"><a href="#">Мебель</a></div>
+				</nav>
+			</div>
+		</div>
+
+		<div class="header__contacts">
+			<div class="wrapper">
+				<div class="header__contacts-flex">
+					<div class="header__contacts-logo ">
+						<a href="" class="href">
+							<img src="./img/logo.png" alt="" class="header__contacts-item position-1">
+						</a>
+						<p class="header__contacts-item position-2">Beauty</p>
+					</div>
+
+					<div class="contacts-feedback ">
+						<a href="tel:+88121234567" class="contacts-phone">8 (812) 123-45-67</a>
+						<a href="#" class="contacts-btn">Обратный звонок</a>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+		<div class="wrapper ">
+			<nav class="header__navigation-services ">
+				<div class="header__navigation-services-item"><a href="#">Парикмахерская</a></div>
+				<div class="header__navigation-services-item"><a href="#">Барбершоп</a></div>
+				<div class="header__navigation-services-item"><a href="#">Маникюр</a></div>
+				<div class="header__navigation-services-item"><a href="#">Педикюр</a></div>
+				<div class="header__navigation-services-item"><a href="#">Массаж</a></div>
+				<div class="header__navigation-services-item"><a href="#">Мебель</a></div>
+			</nav>
+		</div>
+
+		<div class="header__banner">
+			<div class="wrapper">
+				<div class="header__banner-label">Супер кресло</div>
+				<p class="header__banner-desc description">Текст акции всегда отражает суть, а не просто <br>
+					болтовню, поэтому внимательнее
+				</p>
+				<a href="#" class="header__banner-btn button">Подробнее</a>
+			</div>
+		</div>
+	</header>
+	<div class="feedback-btn" id="callModal">
+		<a href="#">Подписка на рассылку</a>
+	</div>
+	<main class="main ">
+		<div class="wrapper ">
+			<section class="main__section-propositions">
+				<div class="main__label">Специальные предложения</div>
+
+				<div class="main__flex">
+
+					<div class="main__cards">
+						<a href="#">
+							<img src="./img/chair.png" alt="">
+						</a>
+						<p class="main__cards-desc">
+							Парикмахерское кресло «Норм» гидравлическое
+						</p>
+						<p class="main__cards-price">
+							9 900 ₽
+						</p>
+						<a href="#" class="main__cards-btn button">Купить</a>
+					</div>
+
+
+					<div class="main__cards">
+						<a href="#">
+							<img src="./img/chair.png" alt="">
+						</a>
+						<p class="main__cards-desc">
+							Парикмахерское кресло «Норм» гидравлическое
+						</p>
+						<p class="main__cards-price">
+							9 900 ₽
+						</p>
+						<a href="#" class="main__cards-btn button">Купить</a>
+					</div>
+
+
+					<div class="main__cards">
+						<a href="#">
+							<img src="./img/chair.png" alt="">
+						</a>
+						<p class="main__cards-desc">
+							Парикмахерское кресло «Норм» гидравлическое
+						</p>
+						<p class="main__cards-price">
+							9 900 ₽
+						</p>
+						<a href="#" class="main__cards-btn button">Купить</a>
+					</div>
+
+					<div class="main__cards">
+						<a href="#">
+							<img src="./img/chair.png" alt="">
+						</a>
+						<p class="main__cards-desc">
+							Парикмахерское кресло «Норм» гидравлическое
+						</p>
+						<p class="main__cards-price">
+							9 900 ₽
+						</p>
+						<a href="#" class="main__cards-btn button">Купить</a>
+					</div>
+				</div>
+
+			</section>
+
+			<section class="main__delivery">
+				<div class="main__tickets">
+					<div class="main__tickets-bonus">
+						<div class="main__tickets-container">
+							<div class="main__tickets-bonus-label label">
+								Получайте бонусы и подарки
+							</div>
+							<p class="main__tickets-bonus-desc description">
+								Каждый месяц разыгрываем <br>
+								10 000 рублей для наших клиентов
+							</p>
+							<input type="email" class="main__tickets-bonus-input" placeholder="Введите e-mail">
+						</div>
+
+						<div class="main__tickets-bonus-logo">
+							<img src="./img/envelope.png" alt="">
+						</div>
+
+					</div>
+
+					<div class="main__tickets-contacts">
+						<div class="main__tickets-container">
+							<div class="main__tickets-contacts-label label">
+								Заходите к нам
+							</div>
+							<p class="main__tickets-contacts-desc ticket-w description">
+								Более 300 магазинов
+								по всей России
+							</p>
+							<a href="#" class="main__tickets-contacts-btn button">
+								Карта магазинов
+							</a>
+						</div>
+
+						<div class="main__tickets-contacts-logo">
+							<img src="./img/car.png" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="main__img">
+				<div class="main__img-float">
+					<a href="#" class="main__img-item"><img src="./img/impuls.png" alt=""></a>
+					<a href="#" class="main__img-item"><img src="./img/impuls.png" alt=""></a>
+					<a href="#" class="main__img-item"><img src="./img/impuls.png" alt=""></a>
+					<a href="#" class="main__img-item"><img src="./img/impuls.png" alt=""></a>
+					<a href="#" class="main__img-item"><img src="./img/impuls.png" alt=""></a>
+					<a href="#" class="main__img-item"><img src="./img/impuls.png" alt=""></a>
+					<a href="#" class="main__img-item"><img src="./img/impuls.png" alt=""></a>
+					<a href="#" class="main__img-item"><img src="./img/impuls.png" alt=""></a>
+					<a href="#" class="main__img-item"><img src="./img/impuls.png" alt=""></a>
+					<a href="#" class="main__img-item"><img src="./img/impuls.png" alt=""></a>
+					<a href="#" class="main__img-item"><img src="./img/impuls.png" alt=""></a>
+					<a href="#" class="main__img-item"><img src="./img/impuls.png" alt=""></a>
+				</div>
+			</section>
+
+			<section class="main__section-look">
+				<div class="main__label">Вы недавно смотрели</div>
+				<div class="main__flex">
+					<div class="main__cards">
+						<a href="#">
+							<img src="./img/chair.png" alt="">
+						</a>
+						<p class="main__cards-desc">
+							Парикмахерское кресло «Норм» гидравлическое
+						</p>
+						<p class="main__cards-price">
+							9 900 ₽
+						</p>
+						<a href="#" class="main__cards-btn button">Купить</a>
+					</div>
+
+					<div class="main__cards">
+						<a href="#">
+							<img src="./img/chair.png" alt="">
+						</a>
+						<p class="main__cards-desc">
+							Парикмахерское кресло «Норм» гидравлическое
+						</p>
+						<p class="main__cards-price">
+							9 900 ₽
+						</p>
+						<a href="#" class="main__cards-btn button">Купить</a>
+					</div>
+
+					<div class="main__cards">
+						<a href="#">
+							<img src="./img/chair.png" alt="">
+						</a>
+						<p class="main__cards-desc">
+							Парикмахерское кресло «Норм» гидравлическое
+						</p>
+						<p class="main__cards-price">
+							9 900 ₽
+						</p>
+						<a href="#" class="main__cards-btn button">Купить</a>
+					</div>
+
+					<div class="main__cards">
+						<a href="#">
+							<img src="./img/chair.png" alt="">
+						</a>
+						<p class="main__cards-desc">
+							Парикмахерское кресло «Норм» гидравлическое
+						</p>
+						<p class="main__cards-price">
+							9 900 ₽
+						</p>
+						<a href="#" class="main__cards-btn button">Купить</a>
+					</div>
+				</div>
+			</section>
+		</div>
+
+	</main>
+
+	<footer class="footer">
+		<div class="wrapper mg-b">
+			<div class="footer__category">
+
+				<div class="footer__category-item">
+					<p class="footer__category-label">Популярные категории</p>
+					<div class="footer__category-line"></div>
+					<ul class="footer__category-list">
+						<li><a href="#">Насадки</a></li>
+						<li><a href="#">Инструменты</a></li>
+						<li><a href="#">Гель-лаки</a></li>
+						<li><a href="#">Дизайн</a></li>
+						<li><a href="#">Наращивание</a></li>
+						<li><a href="#">Оборудование</a></li>
+					</ul>
+				</div>
+
+				<div class="footer__category-item">
+					<p class="footer__category-label">Популярные категории</p>
+					<div class="footer__category-line"></div>
+					<ul class="footer__category-list">
+						<li><a href="#">Насадки</a></li>
+						<li><a href="#">Инструменты</a></li>
+						<li><a href="#">Гель-лаки</a></li>
+						<li><a href="#">Дизайн</a></li>
+						<li><a href="#">Наращивание</a></li>
+						<li><a href="#">Оборудование</a></li>
+					</ul>
+				</div>
+
+				<div class="footer__category-item">
+					<p class="footer__category-label">Популярные категории</p>
+					<div class="footer__category-line"></div>
+					<ul class="footer__category-list">
+						<li><a href="#">Насадки</a></li>
+						<li><a href="#">Инструменты</a></li>
+						<li><a href="#">Гель-лаки</a></li>
+						<li><a href="#">Дизайн</a></li>
+						<li><a href="#">Наращивание</a></li>
+						<li><a href="#">Оборудование</a></li>
+					</ul>
+				</div>
+
+				<div class="footer__category-item">
+					<p class="footer__category-label">Популярные категории</p>
+					<div class="footer__category-line"></div>
+					<ul class="footer__category-list">
+						<li><a href="#">Насадки</a></li>
+						<li><a href="#">Инструменты</a></li>
+						<li><a href="#">Гель-лаки</a></li>
+						<li><a href="#">Дизайн</a></li>
+						<li><a href="#">Наращивание</a></li>
+						<li><a href="#">Оборудование</a></li>
+					</ul>
+				</div>
+			</div>
+
+
+		</div>
+		<div class="footer__category-border"></div>
+		<div class="wrapper">
+			<div class="footer__contacts">
+				<div class="footer__flex-item">
+					<a href="https://www.youtube.com/" class="footer__contacts-item">
+						<img class="" src="./img/Ellipse.png" alt="">
+						<img class="icon-abs-yout" src="./img/yout.png" alt="">
+					</a>
+					<a href="https://vk.com/" class="footer__contacts-item">
+						<img src="./img/Ellipse.png" alt="">
+						<img src="./img/vk.png" alt="" class="icon-abs-vk">
+					</a>
+					<a href="https://www.facebook.com/" class="footer__contacts-item">
+						<img src="./img/Ellipse.png" alt="">
+						<img src="./img/fb.png" alt="" class="icon-abs-fb">
+					</a>
+					<a href="https://www.instagram.com/" class="footer__contacts-item">
+						<img src="./img/Ellipse.png" alt="">
+						<img src="./img/instagram.png" alt="" class="icon-abs-insta">
+					</a>
+				</div>
+				<div class="contacts-feedback  pd-t">
+					<a href="tel:+88121234567" class="contacts-phone">8 (812) 123-45-67</a>
+					<a href="#" class="contacts-btn  ">Обратный звонок</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer__copyright bg-col">
+			<div class="wrapper">
+				<div class="footer__copyright-flex">
+					<div class="footer__copyright-info">
+						Лучший магазин (с) 2019 Все права защищены. Интернет-магазин оборудования для салонов красоты
+					</div>
+					<div class="footer__copyright-conf">
+						Политика конфиденциальности
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="modal" id="modal">
+		<div class="modal__subscribe">
+			<form action="#" method="get" id="formSub">
+				<label class="label-block">
+					<span class="modal__label">Введите Ваше имя:</span>
+					<input id="name" type="text" placeholder="Введите имя" value="">
+				</label>
+				<label class="label-block ">
+					<span class="modal__label pd-r">Введите email:</span>
+					<input type="email" placeholder="name@gmail.com" id="email" value="">
+				</label>
+
+				<span class="modal__label pad-r">Укажите пол:</span>
+				<label>
+					<input type="radio" name="gender" value="fem" checked>Женский
+				</label>
+				<label>
+					<input type="radio" name="gender" value="male">Мужской
+				</label>
+
+				<p>
+					<button type="submit" class="btn-submit" onclick="sayThanks()">Подписаться</button>
+				</p>
+				<i class="fa-solid fa-circle-xmark" id="closeModal"></i>
+			</form>
+		</div>
+	</div>
+
+	<script src="./js/script.js"></script>
+	<script src="./js/modal.js"></script>
+</body>
+
+</html>
