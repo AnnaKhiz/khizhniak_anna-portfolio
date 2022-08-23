@@ -1,0 +1,236 @@
+@import 'variables'
+
+
+//labels
+@mixin h1-label-pink
+  font: normal 700 2.375rem/2.875rem 'Montserrat' //38px/46px
+  background: $color_gradient-redText
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+  background-clip: text
+  text-fill-color: transparent
+
+@mixin h1-label-pink-2
+  font: normal 700 1.875rem/2.75rem 'Montserrat' //38px/44px
+  background: $color_gradient-redText
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+  background-clip: text
+  text-fill-color: transparent
+
+@mixin h2-label-pink
+  font: normal 700 2.25rem/2.75rem 'Montserrat'
+  background: $color_gradient-redText
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+  background-clip: text
+  text-fill-color: transparent
+
+@mixin h2-label-blue
+  font: normal 700 1.875rem/2.3125rem 'Montserrat'
+  color: $color_main-blue
+
+@mixin h3-label-caps
+  font: normal 700 0.875rem/1.0625rem 'Montserrat' //14/17px
+  text-transform: uppercase
+  letter-spacing: 1px
+
+@mixin h3-labelCaps-blue
+  font: normal 700 0.875rem/1.0625rem 'Montserrat'
+  color: $color_main-blue
+
+@mixin h4-label-blue
+  font: normal 700 1rem/1.25rem 'Montserrat' //16/20px
+  color: $color_main-blue
+
+//paragraph/text
+@mixin paragraph-text-black
+  font: normal 400 1rem/1.625rem 'Montserrat'
+  color: $color_block-text
+
+@mixin paragraph-text-white
+  font: normal 400 1rem/1.625rem 'Montserrat'
+  color: $color_hover-text
+
+@mixin ul-ol-text-black
+  font: normal 400 1.125rem/1.625rem 'Montserrat'
+  color: $color_block-text
+
+@mixin text-normal ($fz, $fh)
+  font: 400 $fz 'Montserrat'
+  line-height: $fh
+  font-style: normal
+
+@mixin text-bold ($fz, $fh)
+  font: 700 $fz 'Montserrat'
+  line-height: $fh
+  font-style: normal
+
+@mixin text-boldCaps-blue ($fz, $fh)
+  font: 700 $fz 'Montserrat'
+  line-height: $fh
+  font-style: normal
+  color: $color_active-regular
+  letter-spacing: 1px
+  text-transform: uppercase
+
+//links
+@mixin link-regular-blue
+  font: normal 700 1rem/1.25rem 'Montserrat'
+  color: $color_active-regular
+
+@mixin link-white
+  font: normal 700 1rem/1.25rem 'Montserrat'
+  color: $color_hover-text
+
+@mixin link-hover-pink
+  font: normal 700 1rem/1.25rem 'Montserrat'
+  color: $color_accent-pink
+
+@mixin link-hover-trans
+  color: $color_accent-pink
+  transition: $trans
+
+@mixin btn-hover-trans
+  background-color: $color_accent-pink
+  transition: $trans
+
+//elements-header
+
+@mixin menu-dots
+  content: ''
+  display: inline-block
+  width: 6px
+  height: 6px
+  border-radius: 100%
+  background-color: $color_gray-separator
+  margin-left: 4px
+  margin-right: 4px
+  vertical-align: middle
+
+@mixin menu-dots-team
+  content: ''
+  display: inline-block
+  width: 6px
+  height: 6px
+  border-radius: 100%
+  background-color: $color_gray-separator
+  margin-left: 10px
+  margin-right: 10px
+  vertical-align: middle
+
+@mixin no-dots
+  content: ''
+  display: none
+  width: 0px
+  height: 0px
+  border-radius: 0
+  background-color: transparent
+
+@mixin gray-line ($w)
+  content: ''
+  display: block
+  height: 4px
+  max-width: $w
+  background-color: $color_gray-separator
+  margin: 30px 0
+
+@mixin gray-line-ad ($w)
+  content: ''
+  display: block
+  height: 4px
+  width: $w
+  background: rgba(255, 255, 255, 0.3)
+  margin: 0 0 30px 0
+
+
+@mixin gray-line-public ($w)
+  content: ''
+  display: block
+  height: 4px
+  width: $w
+  background-color: $color_gray-separator
+  margin: 15px 0
+
+@mixin gray-line-vertical ($h)
+  content: ''
+  display: inline
+  height: $h
+  width: 4px
+  background-color: $color_gray-separator
+  margin: 30px 0
+
+@mixin color-block ($color)
+  background-color: $color
+
+@mixin media-max ($mx-w)
+  @media screen and (max-width: $mx-w)
+
+@mixin media-min ($mn-w)
+  @media screen and (max-width: $mn-w)
+
+@mixin container-1920
+  max-width: 1630px
+  padding: 0 15px
+  margin: 0 auto
+  @media screen and (max-width: 1600px)
+    max-width: 1510px
+  @media screen and (max-width: 1440px)
+    max-width: 1350px
+  @media screen and (max-width: 1366px)
+    max-width: 1276px
+  @media screen and (max-width: 1280px)
+    max-width: 1190px
+  @media screen and (max-width: 1024px)
+    max-width: 934px
+  @media screen and (max-width: 768px)
+    max-width: 678px
+  //@media screen and (max-width: 768px)
+    max-width: 678px
+
+@mixin container-1920-f
+  max-width: 1630px
+  padding: 0 15px
+  margin: 0 auto
+  @media screen and (max-width: 1600px)
+    max-width: 1510px
+  @media screen and (max-width: 1440px)
+    max-width: 1350px
+  @media screen and (max-width: 1366px)
+    max-width: 1276px
+  @media screen and (max-width: 1280px)
+    max-width: 1190px
+  @media screen and (max-width: 1024px)
+    max-width: 934px
+  @media screen and (max-width: 768px)
+    max-width: 678px
+
+@mixin container-1390 // 280/280
+  max-width: 1390px
+  padding: 0 15px
+  margin: 0 auto
+  @media screen and (max-width: 1440px)
+    max-width: 1110px
+  @media screen and (max-width: 1024px)
+    max-width: 934px
+  @media screen and (max-width: 768px)
+    max-width: 678px
+  @media screen and (max-width: 767px)
+    padding: 0 30px
+
+@mixin container-clients-gallery
+  max-width: 1750px
+  padding: 0 15px
+  margin: 0 auto
+  @media screen and (max-width: 1440px)
+    max-width: 100%
+    padding: 0
+
+@mixin line-footer
+    content: ''
+    display: block
+    text-align: center
+    height: 2px
+    margin: 0px auto 30px auto
+    background-color: $color_gray-separator
+    width: 100%

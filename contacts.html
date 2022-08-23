@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/contacts.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Contacts</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container-1920">
+            <div class="header-flex">
+                <div class="header__logo">
+                    <div class="header__logo-item-1">
+                        <a href="index.html" class="header__logo-img">
+                            <picture>
+                                <source srcset="./img/logo-375-light.png" media="(max-width: 375px)">
+                                <source srcset="./img/logo.png" media="(min-width: 376px)">
+                                <img src="./img/logo.png" alt="image logo">
+                            </picture>
+                        </a>
+                        <picture>
+                            <source srcset="./img/slash-375.png" media="(max-width: 375px)">
+                            <source srcset="./img/slash.png" media="(min-width: 376px)">
+                            <img class="header__logo-slash" src="./img/slash.png" alt="image slash">
+                        </picture>
+                        <p class="header__logo-text">
+                            contact
+                        </p>
+                    </div>
+                    <div class="header__logo-item-2">
+                        <img src="./img/law-company.png" class="header__logo-desc" alt="image logo-description" >
+                    </div>
+                </div>
+
+                <div class="header__info">
+
+                    <div class="header__info-contacts">
+                        <ul class="header__info-contacts-list">
+                            <li>
+                                <ul class="header__info-contacts-sublist">
+                                    <li><a href="#">УК</a></li>
+                                    <li><a href="#">РУ</a></li>
+                                    <li><a href="#">EN</a></li>
+                                </ul>
+                            </li>
+                            <li class="dot regular">Kyiv, Mechnikova str, 14/1</li>
+                            <li class="dot position-375"><a href="tel:+380800211927">0800 211 927</a></li>
+                            <li class="hide"><a href="#">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z"/>
+                                </svg>
+                            </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <nav class="header__info-navigation">
+                        <ul class="header__info-navigation-list">
+                            <li><a href="about.html">about us</a></li>
+                            <li><a href="services.html">services</a></li>
+                            <li><a href="team.html">team</a></li>
+                            <li><a href="publications.html">publications</a></li>
+                            <li><a href="contacts.html">contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div id="callBurger" class="burger-btn">
+                <input id="menu__toggle" type="checkbox">
+                <label class="menu__btn" for="menu__toggle">
+
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                        <path d="M7 10H25" stroke-width="2"/>
+                        <path d="M7 16H25" stroke-width="2"/>
+                        <path d="M7 22H25" stroke-width="2"/>
+                    </svg>
+
+                </label>
+            </div>
+            <div id="burger" class="burger">
+                <div class="burger__container">
+                    <a href="#"  id="close" class="burger__container-closeLink">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 7L25 25" stroke="#EC6F5D" stroke-width="2"/>
+                            <path d="M25 7L7 25" stroke="#EC6F5D" stroke-width="2"/>
+                        </svg>
+
+                    </a>
+                    <ul class="burger__list-menu ">
+                        <li class="burger__item"><a href="about.html">about us</a></li>
+                        <li class="burger__item"><a href="services.html">services</a></li>
+                        <li class="burger__item"><a href="team.html">team</a></li>
+                        <li class="burger__item"><a href="publications.html">publications</a></li>
+                        <li class="burger__item"><a href="contacts.html">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+
+    <div class="container-1390">
+        <main class="main">
+
+            <div class="main__contacts">
+                <ul class="main__contacts-list">
+                    <li>Kyiv,</li>
+                    <li class="line">Mechnikova str, 14</li>
+                    <li><a href="tel:+380800211927">0800 211 927</a></li>
+                    <li class="line"><a href="mailto:contact@forstudy.space">contact@forstudy.space</a></li>
+                    <li>
+                        <ul class="main__contacts-sublist">
+                            <li><a href="#">
+                                <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z"/>
+                                </svg>
+                            </a></li>
+                            <li><a href="#"><p>Our page <br>on facebook</p></a> </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="main__form">
+                <form action="https://fom.in.ua/echo" method="post" id="form" >
+                    <h1 class="main__form-label">
+                        We would like to help you
+                    </h1>
+                    <input type="text" name="name" placeholder="Name" id="name" required>
+                    <textarea name="user-message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                    <h2 class="main__form-text">
+                        How to answer you?
+                    </h2>
+                    <input type="tel" name="phone" placeholder="Phone number" id="tel" required>
+
+                    <input type="email" name="email" placeholder="Email" id="email" required>
+                    <button type="submit" id="btn">
+                        <span id="btnDefault" class="">Send message</span>
+                        <div class="hidden" id="hidden">
+                            <div class="text-primary spinner-border" role="status" id="loading">
+                                <span class="visually-hidden"></span>
+                            </div>
+                        </div>
+                    </button>
+
+                </form>
+            </div>
+
+
+        </main>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container-1920-f">
+            <div class="footer__flex">
+                <div class="footer__info">
+                    <div class="footer__info-adress">
+                        <ul>
+                            <li class="dot regular">Kyiv, Mechnikova str, 14/1</li>
+                            <li class="ft-link"><a href="#">On map</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__info-contacts">
+                        <ul>
+                            <li><a href="#">
+                                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li><a href="tel:+380800211927">0800 211 927</a></li>
+                            <li><a href="mailto:contact@forstudy.space">contact@forstudy.space</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__copyright">
+                    <p class="footer__copyright-text">
+                        © 2021 HLEGAL Law company, LLC
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+    <script src="js/burger.js"></script>
+    <script src="js/form.js"></script>
+
+</body>
+</html>

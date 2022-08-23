@@ -1,0 +1,487 @@
+@import 'variables'
+@import 'fonts'
+@import 'mixins'
+@import 'reset'
+@import 'header'
+@import 'common-styles'
+
+
+
+.header
+  @media screen and (max-width: 768px)
+    padding-bottom: 0px
+  @media screen and (min-width: 525px)
+    &:before
+      content: ''
+      display: none
+  @media screen and (max-width: 524px)
+    &:before
+      content: ''
+      height: 45px
+      position: relative
+      z-index: 2
+      display: block
+      width: 100%
+      background-color: $color_gray-bg
+  &-flex
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 50px
+    padding-bottom: 30px
+    @media screen and (max-width: 960px)
+      display: block
+    @media screen and (max-width: 524px)
+      display: flex
+      padding-bottom: 0px
+      padding-top: 15px
+    @media screen and (max-width: 375px)
+      display: flex
+      padding-top: 13px
+  &__logo-img
+    margin-bottom: 10px
+    &:hover
+      filter: drop-shadow(1px 1px 5px $color_gray-bgAlt)
+      transition: $trans
+  &__logo-item-1
+    display: flex
+    align-items: flex-start
+    @media screen and (max-width: 750px)
+      position: relative
+      z-index: 2
+    @media screen and (max-width: 960px)
+      margin-top: 56px
+    @media screen and (max-width: 524px)
+      margin-top: 0px
+    @media screen and (max-width: 626px)
+      position: relative
+      z-index: 2
+    @media screen and (max-width: 375px)
+      margin-top: 0px
+  &__logo-item-2
+    @media screen and (max-width: 960px)
+      margin-bottom: 30px
+    @media screen and (max-width: 750px)
+      position: relative
+      z-index: 2
+
+    @media screen and (max-width: 467px)
+      display: none
+  &__logo-text
+    @include text-normal (2.25rem, 2.75rem)
+    color: $color_main-blue
+    @media screen and (max-width: 467px)
+      font: 400 1.25rem "Montserrat"
+      line-height: 1.5rem
+
+  &__info
+    &-contacts
+      display: flex
+      flex-wrap: wrap
+      margin-bottom: 18.5px
+      @media screen and (max-width: 960px)
+        margin-bottom: 0
+      &-list
+        display: flex
+        align-items: center
+        @media screen and (max-width: 960px)
+          position: absolute
+          top: 6%
+          left: 7%
+          z-index: 2
+        @media screen and (max-width: 524px)
+          width: 100%
+          justify-content: space-between
+          top: 1.5%
+          left: 0%
+        & a>svg
+          fill: $color_gray-text
+          transition: $trans
+        & a>svg:hover
+          fill: $color_accent-pink
+          transition: $trans
+        & li.regular
+          @include text-normal (1rem, 1.25rem)
+          color: $color_gray-text
+        & li.regular, & li.hide
+          @media screen and (max-width: 524px)
+            display: none
+        & li.regular + li a
+          @include text-bold (1rem, 1.25rem)
+          color: $color_gray-text
+        & li.position-375
+          @media screen and (max-width: 524px)
+            margin-right: 22px
+        & li.dot:after
+          @include menu-dots
+          @media screen and (max-width: 524px)
+            @include no-dots
+        & li.position-375 a
+          @media screen and (max-width: 524px)
+            width: 105px
+            top: 2%
+            left: 245%
+          @media screen and (max-width: 320px)
+            left: 189%
+      &-sublist
+        display: flex
+        @media screen and (max-width: 524px)
+          margin-left: 7px
+
+        & li a
+          @include text-bold (0.75rem, 0.9375rem)
+          color: $color_gray-text
+          padding: 5px 7px
+          border-radius: 8px
+          background-color: none
+        & li:nth-of-type(3) a:link, & li:nth-of-type(3) a
+          background-color: $color_accent-pink
+          color: $color_hover-text
+          transition: $trans
+        & li a:hover
+          background-color: $color_gray-bg
+          color: $color_gray-text
+          transition: $trans
+        & li:nth-of-type(3):after
+          @include menu-dots
+          @media screen and (max-width: 524px)
+            @include no-dots
+    &-navigation-list
+      display: flex
+      justify-content: flex-end
+      @media screen and (max-width: 960px)
+        justify-content: flex-start
+        position: relative
+        z-index: 2
+      @media screen and (max-width: 524px)
+        display: none
+      & li:nth-of-type(4) a:link, & li:nth-of-type(4) a
+        @include link-hover-pink
+        border-bottom: 2px solid $color_accent-pink
+        padding-bottom: 3px
+      & li:not(:last-of-type)
+        margin-right: 15px
+      & li a
+        @include link-regular-blue
+        transition: $trans
+        &:hover
+          @include link-regular-blue
+          border-bottom: 2px solid $color_active-regular
+          padding-bottom: 3px
+          transition: $trans
+        &:active
+          @include link-hover-pink
+          border-bottom: 2px solid $color_accent-pink
+          padding-bottom: 3px
+
+.main__publications
+  padding-top: 30px
+  padding-bottom: 30px
+  background-color: $color_gray-bg
+  &-subitem
+    padding: 30px
+  &-container
+    display: flex
+    flex-wrap: wrap
+    row-gap: 30px
+    justify-content: space-between
+    column-gap: 30px
+    margin-bottom: 30px
+  &-item
+    width: 31.333%
+    background-color: $color_hover-text
+    border-radius: 8px
+    @media screen and (max-width: 1119px)
+      width: 30.333%
+    @media screen and (max-width: 960px)
+      width: 47.333%
+    @media screen and (max-width: 650px)
+      width: 100%
+    &:last-of-type
+      @media screen and (max-width: 960px)
+        width: 100%
+    & img
+      display: block
+      width: 100%
+      height: auto
+      object-fit: cover
+  &-text
+    margin-bottom: 15px
+    max-height: 100px
+    overflow: hidden
+    & a
+      @include text-bold (1rem, 1.25rem)
+      color: $color_active-regular
+      transition: $trans
+      &:hover
+        @include link-hover-trans
+  &-date
+    @include text-bold (0.75rem, 0.9375rem)
+    color: $color_gray-text
+    text-transform: uppercase
+    letter-spacing: 1px
+    &:after
+      @include gray-line-public (100%)
+  &-desc
+    @include text-normal (0.875rem, 1.375rem)
+    color: $color_block-text
+  &-button
+    max-width: fit-content
+    margin: auto
+    background-color: $color_active-regular
+    box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5)
+    border-radius: 12px
+    & a
+      display: block
+      @include text-bold (1rem, 1.25rem)
+      color: $color_hover-text
+      padding: 18px 30px
+    &:hover
+      @include btn-hover-trans
+.main-article
+  padding: 30px 0 0 0
+  & h2, & h3
+    max-width: 100%
+    max-height: 350px
+    overflow: hidden
+    @media screen and (max-width: 767px)
+      max-height: 530px
+  &__info-img
+    max-width: 1360px
+    max-height: 500px
+    overflow: hidden
+    border-radius: 12px
+    margin-bottom: 30px
+  & .flex
+    display: flex
+    justify-content: center
+    align-items: center
+    & img
+      width: 100%
+      height: auto
+      object-fit: cover
+  &__info-label
+    @include text-bold (1.875rem, 2.3125rem)
+    color: $color_main-blue
+    margin-bottom: 15px
+    @media screen and (max-width: 767px)
+      @include text-bold (1.25rem, 1.5rem)
+  & p
+    max-width: 100%
+    max-height: 295px
+    overflow: hidden
+    @media screen and (max-width: 767px)
+      max-height: 410px
+  & p.main-article__info-text:not(.last)
+    margin-bottom: 10px
+  & p.last
+      margin-bottom: 30px
+  & p.line-after
+    &:after
+      @include gray-line-public (100%)
+      margin: 30px 0
+  &__info-labelRed
+    @include h1-label-pink
+    margin-bottom: 30px
+    @media screen and (max-width: 695px)
+      font: normal 700 1.875rem/2.3125rem 'Montserrat'
+  &__info-labelBold
+    @include text-bold (1.375rem, 1.6875rem)
+    color: $color_main-alt
+    margin-bottom: 15px
+    @media screen and (max-width: 767px)
+      font: normal 700 1rem/1.25rem 'Montserrat'
+  &__info-list
+    @include text-normal (1.125rem, 1.625rem)
+    color: $color_block-text
+    margin-bottom: 30px
+    & li:not(:last-of-type)
+      margin-bottom: 15px
+    & li
+      list-style-type: decimal
+      margin-left: 40px
+      &::marker
+        color: $color_accent-pink
+        @include text-bold (1.125rem, 1.625rem)
+  &__info-ad
+    margin: auto
+    max-width: 640px
+    & img
+      display: block
+      width: 100%
+      height: auto
+      margin-bottom: 15px
+  &__info-adLabel
+    @include text-normal (0.875rem, 1.375rem)
+    color: $color_gray-text
+    text-align: center
+    margin-bottom: 30px
+  &__social
+    display: flex
+    column-gap: 10px
+    margin-bottom: 60px
+    &-link
+      display: block
+      width: 42px
+      height: 42px
+      background-color: $color_gray-bg
+      border-radius: 12px
+      position: relative
+      transition: $trans
+      &:hover
+        background-color: $color_gray-bgAlt
+        transition: $trans
+      & svg
+        position: absolute
+        &.fb
+          top: calc(50% - 24px/2)
+          left: calc(50% - 24px/2)
+        &.telegram
+          top: calc(50% - 24px/2)
+          left: calc(50% - 26px/2)
+        &.linkedin
+          top: calc(50% - 24px/2)
+          left: calc(50% - 24px/2)
+  &__publications
+    background-color: $color_gray-bg
+    padding: 30px 0
+    &-link
+      @include h3-label-caps
+      color: $color_active-regular
+      transition: $trans
+      margin-bottom: 10px
+      display: block
+      &:hover
+        @include link-hover-trans
+    &-label
+      @include h1-label-pink
+      margin-bottom: 30px
+      @media screen and (max-width: 767px)
+      font: normal 700 1.875rem/2.3125rem 'Montserrat'
+    &-block
+      margin-bottom: 0
+
+
+.line-footer
+  &:before
+    @include line-footer
+.footer
+  background-color: $color_gray-bg
+  padding: 0px 0px 30px 0px
+
+  &__flex
+    display: flex
+    justify-content: space-between
+    position: relative
+    @media screen and (max-width: 768px)
+      display: block
+    @media screen and (max-width: 630px)
+      max-width: 100%
+      text-align: center
+  &__info-adress ul
+    display: flex
+    margin-bottom: 21px
+    align-items: center
+    @media screen and (max-width: 768px)
+      margin-bottom: 21px
+    @media screen and (max-width: 630px)
+      display: block
+      max-width: 100%
+
+    & li:not(:last-of-type):after
+      @include menu-dots-team
+      @media screen and (max-width: 630px)
+        @include no-dots
+    & li.regular
+      @include text-normal (1rem, 1.25rem)
+      color: $color_gray-text
+      margin-bottom: 10px
+    & li.ft-link a
+      @include text-bold (0.75rem, 0.9375rem)
+      color: $color_active-regular
+      text-transform: uppercase
+      letter-spacing: 1px
+    & li.ft-link
+      margin-bottom: 10px
+  &__info-contacts ul
+    display: flex
+    align-items: center
+    margin-bottom: 30px
+    @media screen and (max-width: 630px)
+      display: block
+      max-width: 100%
+      margin-bottom: 21px
+    & li
+      @media screen and (max-width: 630px)
+        margin-bottom: 10px
+
+
+    & li a
+      display: inline-block
+    & li:not(:first-of-type):before
+      @include menu-dots-team
+      @media screen and (max-width: 630px)
+        @include no-dots
+    & li:nth-of-type(2) a
+      @include text-bold (1rem, 1.25rem)
+      color: $color_main-alt
+    & li:last-of-type a
+      text-decoration: none
+      @include text-bold (1rem, 1.25rem)
+      color: $color_active-regular
+      transition: $trans
+      &:hover
+        color: $color_accent-pink
+        transition: $trans
+    & li a>svg
+      fill: $color_active-regular
+      transition: $trans
+    & li a>svg:hover
+      fill: $color_accent-pink
+      transition: $trans
+  &__copyright
+
+    &-text
+      @include text-normal (1rem, 1.25rem)
+      color: $color_gray-text
+      @media screen and (max-width: 768px)
+        @include text-normal (1rem, 1.25rem)
+        color: $color_gray-text
+        text-align: center
+      @media screen and (max-width: 630px)
+        position: static
+.switcher
+  text-align: center
+.switch-btn
+  margin-bottom: 30px
+  display: inline-block
+  width: 233px
+  height: 42px
+  border-radius: 12px
+  background: #E6E6F0
+  z-index: 0
+  padding: 0
+  border: none
+  cursor: pointer
+  position: relative
+  transition-duration: 300ms
+  &:after
+    content: "news"
+    @include text-bold (1rem, 2.25rem)
+    color: $color_main-blue
+    height: 42px
+    width: 105px
+    border-radius: 12px
+    background: #fff
+    top: 0px
+    left: 0px
+    transition-duration: 300ms
+    position: absolute
+    z-index: 1
+.switch-on
+  background: #E6E6F0
+  &:after
+    @include text-bold (1rem, 2.25rem)
+    color: $color_main-blue
+    content: 'articles'
+    left: 128px

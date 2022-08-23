@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/publications.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Publications</title>
+</head>
+<body>
+    <header class="header">
+    <div class="container-1920">
+        <div class="header-flex">
+            <div class="header__logo">
+                <div class="header__logo-item-1">
+                    <a href="index.html" class="header__logo-img">
+                        <picture>
+                            <source srcset="./img/logo-375-light.png" media="(max-width: 467px)">
+                            <source srcset="./img/logo.png" media="(min-width: 468px)">
+                            <img src="./img/logo.png" alt="image logo">
+                        </picture>
+                    </a>
+                    <picture>
+                        <source srcset="./img/slash-375.png" media="(max-width: 467px)">
+                        <source srcset="./img/slash.png" media="(min-width: 468px)">
+                        <img class="header__logo-slash" src="./img/slash.png" alt="image slash">
+                    </picture>
+                    <p class="header__logo-text">
+                        publications
+                    </p>
+                </div>
+                <div class="header__logo-item-2">
+                    <img src="./img/law-company.png" class="header__logo-desc" alt="image logo-description" >
+                </div>
+            </div>
+
+            <div class="header__info">
+
+                <div class="header__info-contacts">
+                    <ul class="header__info-contacts-list">
+                        <li>
+                            <ul class="header__info-contacts-sublist">
+                                <li><a href="#">УК</a></li>
+                                <li><a href="#">РУ</a></li>
+                                <li><a href="#">EN</a></li>
+                            </ul>
+                        </li>
+                        <li class="dot regular">Kyiv, Mechnikova str, 14/1</li>
+                        <li class="dot position-375"><a href="tel:+380800211927">0800 211 927</a></li>
+                        <li class="hide"><a href="#">
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z"/>
+                            </svg>
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <nav class="header__info-navigation">
+                    <ul class="header__info-navigation-list">
+                        <li><a href="about.html">about us</a></li>
+                        <li><a href="services.html">services</a></li>
+                        <li><a href="team.html">team</a></li>
+                        <li><a href="publications.html">publications</a></li>
+                        <li><a href="contacts.html">contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div id="callBurger" class="burger-btn">
+            <input id="menu__toggle" type="checkbox">
+            <label class="menu__btn" for="menu__toggle">
+
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                    <path d="M7 10H25" stroke-width="2"/>
+                    <path d="M7 16H25" stroke-width="2"/>
+                    <path d="M7 22H25" stroke-width="2"/>
+                </svg>
+
+            </label>
+        </div>
+        <div id="burger" class="burger">
+            <div class="burger__container">
+                <a href="#"  id="close" class="burger__container-closeLink">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 7L25 25" stroke="#EC6F5D" stroke-width="2"/>
+                        <path d="M25 7L7 25" stroke="#EC6F5D" stroke-width="2"/>
+                    </svg>
+
+                </a>
+                <ul class="burger__list-menu ">
+                    <li class="burger__item"><a href="about.html">about us</a></li>
+                    <li class="burger__item"><a href="services.html">services</a></li>
+                    <li class="burger__item"><a href="team.html">team</a></li>
+                    <li class="burger__item"><a href="publications.html">publications</a></li>
+                    <li class="burger__item"><a href="contacts.html">contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</header>
+
+    <main class="main">
+        <section class="main__publications">
+            <div class="container-1920">
+
+
+        <div class="switcher">
+            <div class="switch-btn switch-off" data-id="#bl-2" ></div>
+            <div id="bl-2"></div>
+        </div>
+                <div class="main__publications-container">
+
+                    <div class="main__publications-item" >
+                        <img src="./img/public-1.png" alt="image publications" id="my_image">
+                        <div class="main__publications-subitem">
+                            <p class="main__publications-text">
+                                <a href="publications-article.html" id="label">
+                                    Equity associate
+                                </a>
+                            </p>
+                            <p class="main__publications-date">
+                                April 22
+                            </p>
+                            <p class="main__publications-desc">
+                                I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="main__publications-item">
+                        <img src="./img/public-2.png" alt="image publications" id="my_image-2">
+                        <div class="main__publications-subitem">
+                            <p class="main__publications-text">
+                                <a href="publications-article.html" id="label-2">
+                                    Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR
+                                </a>
+                            </p>
+                            <p class="main__publications-date">
+                                September 29
+                            </p>
+                            <p class="main__publications-desc">
+                                And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21 National Commission for Data Protection.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="main__publications-item">
+                        <img src="./img/public-3.png" alt="image publications" id="my_image-3">
+                        <div class="main__publications-subitem">
+                            <p class="main__publications-text">
+                                <a href="publications-article.html" id="label-3">
+                                    Millennial Testament
+                                </a>
+                            </p>
+                            <p class="main__publications-date">
+                                August 19
+                            </p>
+                            <p class="main__publications-desc">
+                                What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="main__publications-item">
+                        <img src="./img/public-4.png" alt="image publications" id="my_image-4">
+                        <div class="main__publications-subitem">
+                            <p class="main__publications-text">
+                                <a href="publications-article.html" id="label-4">
+                                    Language Law: How to Make Your Website Relevant
+                                </a>
+                            </p>
+                            <p class="main__publications-date">
+                                August 19
+                            </p>
+                            <p class="main__publications-desc">
+                                Natalia Kyryk, head of content studio Wordfactory.ua First, it's beautiful! This is the number one argument in favor of the Ukrainian-language site. Secondly, it is effective. IN…
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="main__publications-item">
+                        <img src="./img/public-5.png" alt="image publications" id="my_image-5">
+                        <div class="main__publications-subitem">
+                            <p class="main__publications-text">
+                                <a href="publications-article.html">
+                                    Reimbursement of the child's tuition fees in kindergarten and school
+                                </a>
+                            </p>
+                            <p class="main__publications-date">
+                                February 5, 2018
+                            </p>
+                            <p class="main__publications-desc">
+                                What we are talking about In June this year, the Verkhovna Rada amended the Tax Code of Ukraine. From now on, parents who receive an official…
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="main__publications-item">
+                        <div class="main__publications-item-nopic"></div>
+                        <div class="main__publications-subitem">
+                            <p class="main__publications-text">
+                                <a href="publications-article.html" id="label-5">
+                                    Currency control is dead, long live currency control!
+                                </a>
+                            </p>
+                            <p class="main__publications-date">
+                                June 14, 2018
+                            </p>
+                            <p class="main__publications-desc">
+                                Experts hold conferences, round tables and other events on "liberalization of currency legislation." Lawyers-experts-novelists rub their fingers about "ctrl + c / ctrl + v".
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="main__publications-button">
+                    <a href="#" >More publications</a>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="line-footer container-1920"></div>
+            <div class="container-1920-f">
+                <div class="footer__flex">
+                    <div class="footer__info">
+                        <div class="footer__info-adress">
+                            <ul>
+                                <li class="dot regular">Kyiv, Mechnikova str, 14/1</li>
+                                <li class="ft-link"><a href="#">On map</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer__info-contacts">
+                            <ul>
+                                <li><a href="#">
+                                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z"/>
+                                    </svg>
+                                </a></li>
+                                <li><a href="tel:+380800211927">0800 211 927</a></li>
+                                <li><a href="mailto:contact@forstudy.space">contact@forstudy.space</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="footer__copyright">
+                        <p class="footer__copyright-text">
+                            © 2021 HLEGAL Law company, LLC
+                        </p>
+                    </div>
+
+                </div>
+
+        </div>
+    </footer>
+    <script src="js/burger.js"></script>
+
+        <script>
+            $(function () {
+                $('.switch-btn').click(function () {
+                    $(this).toggleClass('switch-on');
+                    if ($(this).hasClass('switch-on')) {
+
+                        $("#my_image").attr("src","./img/public-5.png");
+                        $("#my_image-2").attr("src","./img/public-4.png");
+                        $("#my_image-3").attr("src","./img/public-1.png");
+                        $("#my_image-4").attr("src","./img/public-2.png");
+                        $("#my_image-5").attr("src","./img/public-3.png");
+                        $("#label").text("Reimbursement of the child's tuition fees in kindergarten and school");
+                        $("#label-2").text("Language Law: How to Make Your Website Relevant");
+                        $("#label-3").text("Equity associate");
+                        $("#label-4").text("Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR");
+                        $("#label-5").text("Millennial Testament");
+                        $(this).trigger('on.switch');
+
+                    } else {
+                        $(this).trigger('off.switch');
+
+                        $("#my_image").attr("src","./img/public-1.png");
+                        $("#my_image-2").attr("src","./img/public-2.png");
+                        $("#my_image-3").attr("src","./img/public-3.png");
+                        $("#my_image-4").attr("src","./img/public-4.png");
+                        $("#my_image-5").attr("src","./img/public-5.png");
+                        $("#label").text("Equity associate");
+                        $("#label-2").text("Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR");
+                        $("#label-3").text("Millennial Testament");
+                        $("#label-4").text("Language Law: How to Make Your Website Relevant");
+                        $("#label-5").text("Reimbursement of the child's tuition fees in kindergarten and school");
+                    }
+                });
+                $('.switch-btn').on('on.switch', function () {
+                    $($(this).attr('data-id')).removeClass('bl-hide');
+                });
+                $('.switch-btn').on('off.switch', function () {
+                    $($(this).attr('data-id')).addClass('bl-hide');
+                });
+            });
+    </script>
+
+</body>
+</html>
