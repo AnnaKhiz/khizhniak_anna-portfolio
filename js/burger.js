@@ -1,13 +1,13 @@
 $(document).ready(function () {
 
-    $("#callBurger").on('click', function () {
+    $("#callBurger").on('click', function (event) {
         $('#burger').toggleClass('show');
         $('body').addClass('fixed');
         $('.burger__list-menu').toggleClass('scroll');
         event.preventDefault();
     });
 
-    $("#close").on('click', function () {
+    $("#close").on('click', function (event) {
         $('#burger').toggleClass('show');
         $('body').removeClass('fixed');
         $('.burger__list-menu').toggleClass('scroll');

@@ -1,12 +1,12 @@
 $(document).ready(function () {
-    $("#callModal").on('click', function () {
+    $("#callModal").on('click', function (e) {
         $('#modal').toggleClass('show');
-        event.preventDefault();
+        e.preventDefault();
     });
 
-    $("#closeModal").on('click', function () {
+    $("#closeModal").on('click', function (e) {
         $('#modal').toggleClass('show');
-        event.preventDefault();
+        e.preventDefault();
     });
 
 });
