@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" ></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hobby Art</title>
+</head>
+<body>
+<header class="header">
+    <section class="header__contacts">
+        <div class="container">
+            <ul class="header__contacts-list">
+                <li><a href="tel:+79247652820" class="header__contacts-tel">+7 (924) 765 28 20</a></li>
+                <li>г. Якутск, ул. Петра Алексеева, д. 6, ТЦ “Олонхо”</li>
+                <li>Ежедневно с 10:00 до 19:00</li>
+            </ul>
+
+        </div>
+    </section>
+
+    <section class="header__menu">
+        <div class="container">
+            <div class="header__menu-container">
+                <nav class="header__menu-nav">
+                    <ul>
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">Оплата и доставка</a></li>
+                        <li><a href="#">Бонусная программа</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+
+                    <a href="#" class="header__menu-logo">
+                        <img src="img/logo.png" alt="logo">
+                    </a>
+                <div class="header__menu-subitem">
+                    <form action="#" method="get" class="header__menu-search elem-sub">
+                        <input type="text" placeholder="Поиск товара">
+                    </form>
+                    <a href="" class="header__menu-enterButton elem-sub">
+                        Войти
+                    </a>
+                    <a href="" class="header__menu-favoriteButton elem-sub">
+                        Избранное
+                    </a>
+                    <a href="" class="header__menu-basketButton elem-sub">
+                        Корзина
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
+<div class="menu__btn" id="callBurger">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+<div id="burger" class="burger">
+    <div class="burger__container">
+        <a href="#"  id="close" class="burger__container-closeLink">
+
+        </a>
+        <ul class="burger__list-menu">
+            <li class="burger__item">
+                <a href="#">
+                    Каталог
+                </a>
+            </li>
+            <li class="burger__item">
+                <a href="#">
+                    Оплата и доставка
+                </a>
+            </li>
+            <li class="burger__item">
+                <a href="#">
+                    Бонусная программа
+                </a>
+            </li>
+            <li class="burger__item">
+                <a href="#">
+                    О компании
+                </a>
+            </li>
+            <li class="burger__item">
+                <a href="#">
+                    Контакты
+                </a>
+            </li>
+            <li class="burger__item address-block">
+                <p>г. Якутск, ул. Петра Алексеева, д. 6, ТЦ “Олонхо”</p>
+                <p>Ежедневно с 10:00 до 19:00</p>
+            </li>
+        </ul>
+    </div>
+</div>
+<main class="main">
+    <section class="main__banner">
+        <div class="container swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="main__banner-container">
+                            <div class="main__banner-item image">
+                                <img src="img/yarn-image.png" alt="yarn image">
+                            </div>
+                            <div class="main__banner-item text-block">
+                                <h2 class="main__banner-item-label">
+                                    Пряжа Macrametr
+                                </h2>
+                                <p class="main__banner-item-text">
+                                    Повседневная практика показывает, что укрепление и развитие внутренней структуры обеспечивает широкому кругу (специалистов) участие в формировании форм воздействия.
+                                </p>
+                                <a href="" class="main__banner-item-button">
+                                    В каталог
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="main__banner-container">
+                            <div class="main__banner-item image">
+                                <img src="img/yarn-image.png" alt="yarn image">
+                            </div>
+                            <div class="main__banner-item text-block">
+                                <h2 class="main__banner-item-label">
+                                    Пряжа Macrametr 2
+                                </h2>
+                                <p class="main__banner-item-text">
+                                    Повседневная практика показывает, что укрепление и развитие внутренней структуры обеспечивает широкому кругу (специалистов) участие в формировании форм воздействия.
+                                </p>
+                                <a href="" class="main__banner-item-button">
+                                    В каталог
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="main__banner-container">
+                            <div class="main__banner-item image">
+                                <img src="img/yarn-image.png" alt="yarn image">
+                            </div>
+                            <div class="main__banner-item text-block">
+                                <h2 class="main__banner-item-label">
+                                    Пряжа Macrametr 3
+                                </h2>
+                                <p class="main__banner-item-text">
+                                    Повседневная практика показывает, что укрепление и развитие внутренней структуры обеспечивает широкому кругу (специалистов) участие в формировании форм воздействия.
+                                </p>
+                                <a href="" class="main__banner-item-button">
+                                    В каталог
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <section class="main__slider-popular">
+        <div class="container">
+            <div class="main__slider-popular-switcher">
+                <p class="main__slider-popular-switcher-label red-text" id="switcher-label-1">
+                    Новинки
+                </p>
+
+                <div class="switcher-button">
+                    <div class="switch-btn switch-off" data-id="#bl-2" ></div>
+                    <div id="bl-2"></div>
+                </div>
+
+                <p class="main__slider-popular-switcher-label" id="switcher-label-2">
+                    Популярное
+                </p>
+            </div>
+
+            <div class="swiperTwo mySwiper-2">
+                <div class="main__slider-popular-container swiper-wrapper">
+
+                <div class="main__slider-popular-item swiper-slide">
+                    <a href="#">
+                        <img src="img/slider-img-1.png" alt="image slider">
+                        <p class="main__slider-popular-item-text">
+                            Пряжа Macrametr
+                        </p>
+                    </a>
+                </div>
+
+                <div class="main__slider-popular-item swiper-slide">
+                    <a href="">
+                        <img src="img/slider-img-2.png" alt="image slider">
+                        <p class="main__slider-popular-item-text">
+                            Кольца бамбук
+                        </p>
+                    </a>
+                </div>
+
+                <div class="main__slider-popular-item swiper-slide">
+                    <a href="">
+                        <img src="img/slider-img-3.png" alt="image slider">
+                        <p class="main__slider-popular-item-text">
+                            Трикотажная пряжа Zefirka
+                        </p>
+                    </a>
+                </div>
+
+                <div class="main__slider-popular-item swiper-slide">
+                    <a href="">
+                        <img src="img/slider-img-4.png" alt="image slider">
+                        <p class="main__slider-popular-item-text">
+                            Шпагат крученый
+                        </p>
+                    </a>
+                </div>
+
+                <div class="main__slider-popular-item swiper-slide">
+                    <a href="">
+                        <img src="img/slider-img-5.png" alt="image slider">
+                        <p class="main__slider-popular-item-text">
+                            Джут «Арахна»
+                        </p>
+                    </a>
+                </div>
+
+            </div>
+
+            </div>
+            <div class="swiper-button-next-2"></div>
+            <div class="swiper-button-prev-2"></div>
+        </div>
+    </section>
+    <section class="main__catalog">
+        <div class="container">
+            <img src="img/text-katalog.png" alt="image fon" class="main__catalog-fon-img">
+            <h2 class="main__catalog-label">
+                Каталог товаров
+            </h2>
+            <div class="main__catalog-container">
+
+                <div class="main__catalog-item">
+                    <h3 class="main__catalog-item-label">
+                        Макраме
+                    </h3>
+                    <p class="main__catalog-item-price">
+                        от 250 ₽
+                    </p>
+                    <div class="main__catalog-item-subitem">
+                        <a href="#" class="main__catalog-item-link">
+                            Подробнее
+                        </a>
+                        <img src="img/catalog-img-pink.png" alt="image catalog">
+                    </div>
+                </div>
+
+                <div class="main__catalog-item">
+                    <h3 class="main__catalog-item-label">
+                        Вязание
+                    </h3>
+                    <p class="main__catalog-item-price">
+                        от 250 ₽
+                    </p>
+                    <div class="main__catalog-item-subitem">
+                        <a href="#" class="main__catalog-item-link">
+                            Подробнее
+                        </a>
+                        <img src="img/catalog-img-violet.png" alt="image catalog">
+                    </div>
+                </div>
+
+                <div class="main__catalog-item">
+                    <h3 class="main__catalog-item-label">
+                        вышивка
+                    </h3>
+                    <p class="main__catalog-item-price">
+                        от 250 ₽
+                    </p>
+                    <div class="main__catalog-item-subitem">
+                        <a href="#" class="main__catalog-item-link">
+                            Подробнее
+                        </a>
+                        <img src="img/catalog-img-pink-shadow.png" alt="image catalog">
+                    </div>
+                </div>
+
+                <div class="main__catalog-item">
+                    <h3 class="main__catalog-item-label">
+                        лепка
+                    </h3>
+                    <p class="main__catalog-item-price">
+                        от 250 ₽
+                    </p>
+                    <div class="main__catalog-item-subitem">
+                        <a href="#" class="main__catalog-item-link">
+                            Подробнее
+                        </a>
+                        <img src="img/catalog-img-pink-shadow.png" alt="image catalog">
+                    </div>
+                </div>
+
+                <div class="main__catalog-item">
+                    <h3 class="main__catalog-item-label">
+                        инструменты
+                    </h3>
+                    <p class="main__catalog-item-price">
+                        от 250 ₽
+                    </p>
+                    <div class="main__catalog-item-subitem">
+                        <a href="#" class="main__catalog-item-link">
+                            Подробнее
+                        </a>
+                        <img src="img/catalog-img-pink.png" alt="image catalog">
+                    </div>
+                </div>
+
+                <div class="main__catalog-item">
+                    <h3 class="main__catalog-item-label">
+                        Упаковка
+                    </h3>
+                    <p class="main__catalog-item-price">
+                        от 250 ₽
+                    </p>
+                    <div class="main__catalog-item-subitem">
+                        <a href="#" class="main__catalog-item-link">
+                            Подробнее
+                        </a>
+                        <img src="img/catalog-img-violet.png" alt="image catalog">
+                    </div>
+                </div>
+
+                <div class="main__catalog-item">
+                    <h3 class="main__catalog-item-label">
+                        товары для творчества
+                    </h3>
+                    <p class="main__catalog-item-price">
+                        от 250 ₽
+                    </p>
+                    <div class="main__catalog-item-subitem">
+                        <a href="#" class="main__catalog-item-link">
+                            Подробнее
+                        </a>
+                        <img src="img/catalog-img-pink-shadow.png" alt="image catalog">
+                    </div>
+                </div>
+
+                <div class="main__catalog-item">
+                    <h3 class="main__catalog-item-label">
+                        книги
+                    </h3>
+                    <p class="main__catalog-item-price">
+                        от 250 ₽
+                    </p>
+                    <div class="main__catalog-item-subitem">
+                        <a href="#" class="main__catalog-item-link">
+                            Подробнее
+                        </a>
+                        <img src="img/catalog-img-pink-shadow.png" alt="image catalog">
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <section class="main__preferences">
+        <div class="container">
+            <h2 class="main__preferences-label">
+                Хобби арт: 9 лет на рынке
+            </h2>
+            <div class="main__preferences-container">
+
+                <div class="main__preferences-item">
+                    <img src="img/pref-delivery.png" alt="image preferences">
+                    <div class="main__preferences-subitem">
+                        <h3 class="main__preferences-subitem-label">
+                            Поставщики
+                        </h3>
+                        <p class="main__preferences-subitem-text">
+                            Мы работаем только с надежными и проверенными поставщиками товаров для творчества
+                        </p>
+                    </div>
+                </div>
+
+                <div class="main__preferences-item">
+                    <img src="img/preferences-knit.png" alt="image preferences">
+                    <div class="main__preferences-subitem">
+                        <h3 class="main__preferences-subitem-label">
+                            товары
+                        </h3>
+                        <p class="main__preferences-subitem-text">
+                            Мы привозим актуальные и новые товары, инструменты для вашего творчества по низким ценам
+                        </p>
+                    </div>
+                </div>
+
+                <div class="main__preferences-item">
+                    <img src="img/preferences-bonus.png" alt="image preferences">
+                    <div class="main__preferences-subitem">
+                        <h3 class="main__preferences-subitem-label">
+                            Бонусы
+                        </h3>
+                        <p class="main__preferences-subitem-text">
+                            У нас действует накопительная бонусная система скидок. Дарим в день рождения 500 бонусных рублей
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <section class="main__instagram">
+        <div class="container">
+            <h2 class="main__instagram-label">
+                наш instagram
+            </h2>
+            <div class="main__instagram-gallery-container">
+                <div class="big-image-1">
+                    <div>
+                    <img src="img/insta-img-1.png" alt="image instagram" >
+                    </div>
+                </div>
+                <div class="small-image-1">
+                    <img src="img/insta-img-2.png" alt="image instagram" >
+                </div>
+                <div class="small-image-2">
+                    <img src="img/insta-img-3.png" alt="image instagram" >
+                </div>
+                <div class="small-image-3">
+                    <img src="img/insta-img-4.png" alt="image instagram" >
+                </div>
+                <div class="small-image-4">
+                    <img src="img/insta-img-5.png" alt="image instagram" >
+                </div>
+                <div class="big-image-2">
+                    <img src="img/insta-img-6.png" alt="image instagram" >
+                </div>
+            </div>
+
+                <a href="#" class="main__instagram-button"><span>@</span>hobbyart_dv</a>
+
+
+        </div>
+    </section>
+    <section class="main__feedback">
+        <div class="container">
+            <img src="img/questions-image.png" alt="image fon">
+            <h3 class="main__feedback-label">
+                Есть вопрос? Мы перезвоним!
+            </h3>
+            <form action="#" method="get" class="main__feedback-form">
+                <input type="text" placeholder="Ваше имя">
+                <input type="text" placeholder="Телефон">
+                <div class="main__feedback-subform">
+                    <button type="submit">Отправить</button>
+                    <p class="main__feedback-subform-text">
+                        *нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности
+                    </p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__container">
+
+            <div class="footer__item contacts">
+                <div class="footer__item-logo">
+                    <img src="img/logo.png" alt="image logo">
+                </div>
+                <ul>
+                    <li><a href="tel:+79247652820">+7 (924) 765 28 20</a></li>
+                    <li>г. Якутск, ул. Петра Алексеева, д. 6, ТЦ “Олонхо”</li>
+                    <li>Ежедневно с 10:00 до 19:00</li>
+                    <li><a href="mailto:@hobbyart_dv">@hobbyart_dv</a></li>
+                </ul>
+            </div>
+
+            <nav class="footer__item navigation">
+                <ul>
+                    <li><a href="">Каталог</a></li>
+                    <li><a href="">Акции</a></li>
+                    <li><a href="">Новинки</a></li>
+                    <li><a href="">Популярное</a></li>
+                    <li><a href="">Гарантия и возврат</a></li>
+                    <li><a href="">Оплата и доставка</a></li>
+                    <li><a href="">Бонусная программа</a></li>
+                    <li><a href="">О компании</a></li>
+                    <li><a href="">Преимущества</a></li>
+                    <li><a href="">Личный кабинет</a></li>
+                </ul>
+            </nav>
+
+            <div class="footer__item subscribe">
+                <h3 class="footer__item-label">
+                    Узнавайте первым о новинках и новостях
+                </h3>
+                <form action="#" method="get" class="footer__item-form">
+                    <input type="email" placeholder="Ваш Email">
+                    <button type="submit">подписаться</button>
+                </form>
+                <p class="footer__item-text">
+                    Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности
+                </p>
+                <p class="footer__item-copyright">
+                    © 2012-2021 ХОББИ АРТ — официальный интернет-магазин товаров для хобби. Все права защищены. Условия использования и политика конфиденциальности
+                </p>
+            </div>
+            
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="js/switcher.js"></script>
+<script src="js/swiper.js"></script>
+<script src="js/burger.js"></script>
+</body>
+</html>
