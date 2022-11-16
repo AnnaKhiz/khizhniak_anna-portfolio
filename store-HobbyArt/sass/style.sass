@@ -623,7 +623,58 @@ body
         @media screen and (max-width: 767px)
           margin: auto
 
-
+  &__delivery__page
+    &-breadcrumbs
+      margin: 64px 0
+      &-list
+        display: flex
+        column-gap: 8px
+        align-items: center
+        li:not(:nth-of-type(2))
+          @include textSmall (1rem, 1.25rem, $colorTextMain)
+        li:nth-of-type(2) span
+          color: $colorTextMain
+        li a
+          @include textSmall (1rem, 1.25rem, $colorTextMain)
+    &-sidebar
+      ul li
+        position: relative
+        width: 390px
+        height: 100px
+        box-shadow: 0px 0px 30px rgba(68, 68, 68, 0.05)
+        border-radius: 20px
+        background: $colorTextButton
+        margin-bottom: 24px
+        @include trans
+        &:hover
+          background: linear-gradient(59.75deg, #C5C5A8 -2.61%, #E2E1CF 76.3%, #E2E1CF 76.3%)
+          @include trans
+        &:first-of-type:after
+          @include headerContactsIcon (url('../img/catalog-img-link1.png'), 0, 60%)
+        &:nth-of-type(2):after
+          @include headerContactsIcon (url('../img/catalog-img-link2.png'), 6%, 66%)
+        a
+          display: block
+          padding: 40px 49px 38px
+          @include textSmallBold (1.125rem, 1.375rem, $colorTextMain)
+    &-container
+      display: flex
+      column-gap: 80px
+      align-items: flex-start
+      margin-bottom: 99px
+    &-label
+      @include sectionLabel
+      margin-bottom: 40px
+    &-content
+      &-label
+        @include sectionLabel
+        margin-bottom: 40px
+      &-text-block
+        margin-bottom: 48px
+      &-text
+        @include textSmall (1.125rem, 1.6875rem, $colorTextMain)
+        margin-bottom: 15px
+        @include textBlock-width (860px)
 .footer
   padding: 64px 0
   background: linear-gradient(59.75deg, #C5C5A8 -2.61%, #E2E1CF 76.3%, #E2E1CF 76.3%)

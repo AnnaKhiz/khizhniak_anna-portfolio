@@ -5,7 +5,7 @@ const sass = require('gulp-sass')(require('sass'));
 
 //функция сборки для html файла
 gulp.task('html:build', function () {
-    gulp.src('build/html/*.html') //Выберем файлы по нужному пути
+    gulp.src('build/html/**/*.html') //Выберем файлы по нужному пути
         .pipe(rigger()) //Прогоним через rigger
         .pipe(gulp.dest('./')) //Вернем в корневую папку
 });
