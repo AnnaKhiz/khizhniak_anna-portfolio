@@ -9,7 +9,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" ></script>
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Доставка и оплата</title>
 </head>
 <body>
 <header class="header">
@@ -28,11 +28,11 @@
             <div class="header__menu-container">
                 <nav class="header__menu-nav">
                     <ul>
-                        <li><a href="#">Каталог</a></li>
+                        <li><a href="index.html#catalog">Каталог</a></li>
                         <li><a href="delivery.html">Оплата и доставка</a></li>
-                        <li><a href="#">Бонусная программа</a></li>
-                        <li><a href="#">О компании</a></li>
-                        <li><a href="#">Контакты</a></li>
+                        <li><a href="bonus.html">Бонусная программа</a></li>
+                        <li><a href="about.html">О компании</a></li>
+                        <li><a href="#footer">Контакты</a></li>
                     </ul>
                 </nav>
                     <a href="#" class="header__menu-logo">
@@ -42,7 +42,7 @@
                     <form action="#" method="get" class="header__menu-search elem-sub">
                         <input type="text" placeholder="Поиск товара">
                     </form>
-                    <a href="" class="header__menu-enterButton elem-sub">
+                    <a href="" class="header__menu-enterButton elem-sub" id="callModal">
                         Войти
                     </a>
                     <a href="" class="header__menu-favoriteButton elem-sub">
@@ -55,6 +55,86 @@
             </div>
         </div>
     </section>
+    <div class="modal-regist" id="modal-regist">
+        <div class="modal__registration">
+                <div class="modal__registration-block">
+                        <a href="#" id="closeModal-regist" class="modal__registration-closeLink link-style">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 7L25 25" stroke="#EC6F5D" stroke-width="2"></path>
+                                <path d="M25 7L7 25" stroke="#EC6F5D" stroke-width="2"></path>
+                            </svg>
+                        </a>
+                        <div class="scroll_on">
+                            <form action="#" class="modal__registration-form" id="registration-form">
+                                <h2 class="modal__registration-form-label">
+                                    Регистрация
+                                </h2>
+                                <input type="text" name="name" id="user-name" placeholder="Имя">
+                                <input type="text" name="last-name" id="user-last-name" placeholder="Фамилия">
+                                <input type="text" name="sur-name" id="user-sur-name" placeholder="Отчество">
+                                <input type="tel" name="phone" id="user-phone" placeholder="Номер телефона">
+                                <input type="email" name="email" id="user-email" placeholder="E-mail">
+                                <input type="text" name="password" id="user-password" placeholder="Придумайте пароль">
+                                <input type="text" name="password-confirm" id="user-confirm-password" placeholder="Повторите пароль">
+                                <span class="modal__registration-form-message">Пароль должен содержать от 6 символов</span>
+                                <button class="modal__registration-form-button">Зарегистрироваться</button>
+                            </form>
+                            <div class="modal__registration-block-login">
+                                <p class="modal__registration-block-text">
+                                    Есть аккаунт?
+                                </p>
+                                <a href="login.html" class="modal__registration-block-button">
+                                    войти
+                                </a>
+                            </div>
+                        </div>
+            </div>
+    
+    
+        </div>
+    </div>
+    <div class="modal" id="modal">
+        <div class="modal__login">
+            <div class="modal__registration-block login">
+                <a href="#" id="closeModal" class="modal__registration-closeLink link-style login">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 7L25 25" stroke="#EC6F5D" stroke-width="2"></path>
+                        <path d="M25 7L7 25" stroke="#EC6F5D" stroke-width="2"></path>
+                    </svg>
+                </a>
+                <div class="scroll_on" id="login-inner-content">
+                    <form action="#" class="modal__registration-form login" id="registration-form">
+                        <h2 class="modal__registration-form-label login">
+                            Войти в личный кабинет
+                        </h2>
+                        <input type="tel" name="phone" id="user-phone" placeholder="Номер телефона">
+                        <input type="text" name="password" id="user-password" placeholder="Пароль">
+                        <div class="modal__registration-subitem-ch">
+                            <input type="checkbox" name="save-info" id="checkbox">
+                            <label for="checkbox" class="checkbox-label">Запомнить меня</label>
+                        </div>
+    
+                        <div class="modal__registration-subitem">
+                            <button class="modal__registration-form-button">Войти</button>
+                            <p class="modal__registration-block-text">
+                                Забыли пароль?
+                            </p>
+                        </div>
+                    </form>
+                    <div class="modal__login-block-register">
+                        <p class="modal__login-block-text">
+                            Вы еще не зарегистрированы?
+                        </p>
+                        <a href="#" class="modal__login-block-button" id="regist-button">
+                            Регистрация
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+    
+        </div>
+    </div>
 </header>
 <div class="menu__btn" id="callBurger">
     <span></span>
@@ -69,27 +149,27 @@
         </a>
         <ul class="burger__list-menu">
             <li class="burger__item">
-                <a href="#">
+                <a href="index.html#catalog">
                     Каталог
                 </a>
             </li>
             <li class="burger__item">
-                <a href="#">
+                <a href="delivery.html">
                     Оплата и доставка
                 </a>
             </li>
             <li class="burger__item">
-                <a href="#">
+                <a href="bonus.html">
                     Бонусная программа
                 </a>
             </li>
             <li class="burger__item">
-                <a href="#">
+                <a href="about.html">
                     О компании
                 </a>
             </li>
             <li class="burger__item">
-                <a href="#">
+                <a href="index.html#footer">
                     Контакты
                 </a>
             </li>
@@ -228,7 +308,7 @@
 
     </section>
 </main>
-<footer class="footer">
+<footer class="footer" id="footer">
     <div class="container">
         <div class="footer__container">
 
@@ -246,15 +326,15 @@
 
             <nav class="footer__item navigation">
                 <ul>
-                    <li><a href="">Каталог</a></li>
+                    <li><a href="index.html#catalog">Каталог</a></li>
                     <li><a href="">Акции</a></li>
-                    <li><a href="">Новинки</a></li>
-                    <li><a href="">Популярное</a></li>
-                    <li><a href="">Гарантия и возврат</a></li>
-                    <li><a href="">Оплата и доставка</a></li>
-                    <li><a href="">Бонусная программа</a></li>
-                    <li><a href="">О компании</a></li>
-                    <li><a href="">Преимущества</a></li>
+                    <li><a href="index.html#popular-new">Новинки</a></li>
+                    <li><a href="index.html#popular-new">Популярное</a></li>
+                    <li><a href="guarantee.html">Гарантия и возврат</a></li>
+                    <li><a href="delivery.html">Оплата и доставка</a></li>
+                    <li><a href="bonus.html">Бонусная программа</a></li>
+                    <li><a href="about.html">О компании</a></li>
+                    <li><a href="index.html#benefits">Преимущества</a></li>
                     <li><a href="">Личный кабинет</a></li>
                 </ul>
             </nav>
