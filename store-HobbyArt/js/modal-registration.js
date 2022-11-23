@@ -30,14 +30,50 @@ document.addEventListener('DOMContentLoaded', function(){
                 contentInModalWindow.innerHTML = loginFormTemplate;
                 e.preventDefault();
                 noName();
+                callFormForgotPassword();
             });
         });
     }
     noName();
 
+    function callFormForgotPassword() {
+        const modalRegistrationForgotButton = document.getElementById('modal-registration-forgot-button');
+        modalRegistrationForgotButton.addEventListener('click', (e) => {
+            contentInModalWindow.innerHTML = forgotPasswordFormTemplate;
+            const forgotPasswordButton = document.getElementById('forgot-password-button');
+            sendEmail(forgotPasswordButton,contentInModalWindow);
+            e.preventDefault();
+        });
+    };
+    callFormForgotPassword();
+
     modalCloseBtn.addEventListener('click', (e) => {
         modalTemplate.classList.remove('show');
         bodyPage.classList.remove('fixed');
+        window.location.reload();
         e.preventDefault();
     });
 });
+
+    const forgotPasswordFormTemplate = document.getElementById('forgot-password-form-template').innerHTML;
+
+    function sendEmail(forgotPasswordButton, contentInModalWindow) {
+        forgotPasswordButton.addEventListener('click', (e) => {
+            const forgotPasswordEmail = document.getElementById('forgot-password-email');
+            if (forgotPasswordEmail.value !== '') {
+                setTimeout(()=>{
+                    window.location.reload();
+                }, 2000);
+                contentInModalWindow.innerHTML = `<p class="error-message">Your email successfully sent! Check your mailbox and try login again.</p>`;
+            } else {
+                setTimeout(()=>{
+                    contentInModalWindow.innerHTML = forgotPasswordFormTemplate;
+                    const forgotPasswordButton = document.getElementById('forgot-password-button');
+                    sendEmail(forgotPasswordButton,contentInModalWindow);
+                }, 2000);
+                contentInModalWindow.innerHTML = `<p class="error-message">Enter your email.</p>`;
+            }
+            e.preventDefault();
+        });
+    }
+
