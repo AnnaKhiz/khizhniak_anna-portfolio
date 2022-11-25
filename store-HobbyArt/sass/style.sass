@@ -637,6 +637,9 @@ body
           color: $colorTextMain
         li a
           @include textSmall (1rem, 1.25rem, $colorTextMain)
+          &:hover
+            text-decoration: underline
+            @include trans
     &-sidebar
       ul li
         position: relative
@@ -688,6 +691,73 @@ body
         @include textSmall (1.125rem, 1.6875rem, $colorTextMain)
         margin-bottom: 15px
         @include textBlock-width (860px)
+  &__product-page
+    &-breadcrumbs
+      margin: 64px 0 32px 0
+      &-list
+        display: flex
+        column-gap: 8px
+        align-items: center
+        li:nth-of-type(5)
+          @include textSmall (1rem, 1.25rem, $colorTextMain)
+        li:nth-of-type(2) span, li:nth-of-type(4) span
+          color: $colorTextMain
+        li a
+          @include textSmall (1rem, 1.25rem, $colorTextMain)
+          @include trans
+          &:hover
+            text-decoration: underline
+            @include trans
+    &-price-block
+      margin-bottom: 30px
+      display: flex
+      justify-content: flex-end
+      align-items: center
+      column-gap: 15px
+      &-btn a
+        @include buttonWithBorder
+    &-container
+      display: flex
+      column-gap: 80px
+      align-items: flex-start
+      margin-bottom: 99px
+    &-sidebar
+      &-title
+        @include textMenuBold
+        margin-bottom: 10px
+      &-block
+        margin-bottom: 20px
+        & li
+          @include textSmall (0.875rem, 1.0625rem, $colorTextMain)
+          margin-bottom: 14px
+          & input
+            margin-right: 8px
+        &:not(:last-of-type):after
+          content: ''
+          display: block
+          height: 1px
+          background: $grayLinkColor
+          margin: 27px 0 20px 0
+      &-button
+        @include trans
+        @include buttonWithBorder
+        padding: 12px 42px
+        border-radius: 49px
+        @include textButton
+        margin: 0 auto 16px auto
+        &-style-color
+          @include button
+          color: $colorTextButton
+          display: block
+          margin: 0 auto 16px auto
+      &-message
+        @include textSmall (0.875rem, 1.0625rem, $grayLinkColor)
+        text-align: center
+          
+
+
+
+
 
 
 

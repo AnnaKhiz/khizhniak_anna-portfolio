@@ -2210,6 +2210,10 @@ body {
   line-height: 1.25rem;
   color: #424242;
 }
+.main__delivery__page-breadcrumbs-list li a:hover {
+  text-decoration: underline;
+  transition: all ease-in-out 0.3s;
+}
 .main__delivery__page-sidebar ul li {
   position: relative;
   width: 390px;
@@ -2288,6 +2292,162 @@ body {
   margin-bottom: 15px;
   max-width: 860px;
   overflow: hidden;
+}
+.main__product-page-breadcrumbs {
+  margin: 64px 0 32px 0;
+}
+.main__product-page-breadcrumbs-list {
+  display: flex;
+  column-gap: 8px;
+  align-items: center;
+}
+.main__product-page-breadcrumbs-list li:nth-of-type(5) {
+  font: 400 normal 1rem "Montserrat";
+  line-height: 1.25rem;
+  color: #424242;
+}
+.main__product-page-breadcrumbs-list li:nth-of-type(2) span, .main__product-page-breadcrumbs-list li:nth-of-type(4) span {
+  color: #424242;
+}
+.main__product-page-breadcrumbs-list li a {
+  font: 400 normal 1rem "Montserrat";
+  line-height: 1.25rem;
+  color: #424242;
+  transition: all ease-in-out 0.3s;
+}
+.main__product-page-breadcrumbs-list li a:hover {
+  text-decoration: underline;
+  transition: all ease-in-out 0.3s;
+}
+.main__product-page-price-block {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 15px;
+}
+.main__product-page-price-block-btn a {
+  display: block;
+  padding: 10px 38px;
+  font: 400 normal 0.875rem "Montserrat";
+  line-height: 1.0625rem;
+  color: #BDBDBD;
+  border: 1px solid #BDBDBD;
+  border-radius: 46px;
+  transition: all ease-in-out 0.3s;
+  position: relative;
+  z-index: 0;
+}
+.main__product-page-price-block-btn a:hover {
+  transition: all ease-in-out 0.3s;
+  background: linear-gradient(102.48deg, #976464 -29.03%, #CFA5A5 97.75%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  border: 1px solid #CFA5A5;
+}
+.main__product-page-price-block-btn a:active {
+  transition: all ease-in-out 0.3s;
+  background: linear-gradient(102.48deg, #976464 -29.03%, #CFA5A5 97.75%);
+  -webkit-background-clip: inherit;
+  -webkit-text-fill-color: white;
+  background-clip: inherit;
+  text-fill-color: white;
+  color: #FFFFFF;
+}
+.main__product-page-container {
+  display: flex;
+  column-gap: 80px;
+  align-items: flex-start;
+  margin-bottom: 99px;
+}
+.main__product-page-sidebar-title {
+  font: 600 normal 1rem/1.5rem "Montserrat";
+  color: #424242;
+  margin-bottom: 10px;
+}
+.main__product-page-sidebar-block {
+  margin-bottom: 20px;
+}
+.main__product-page-sidebar-block li {
+  font: 400 normal 0.875rem "Montserrat";
+  line-height: 1.0625rem;
+  color: #424242;
+  margin-bottom: 14px;
+}
+.main__product-page-sidebar-block li input {
+  margin-right: 8px;
+}
+.main__product-page-sidebar-block:not(:last-of-type):after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: #BDBDBD;
+  margin: 27px 0 20px 0;
+}
+.main__product-page-sidebar-button {
+  transition: all ease-in-out 0.3s;
+  display: block;
+  padding: 10px 38px;
+  font: 400 normal 0.875rem "Montserrat";
+  line-height: 1.0625rem;
+  color: #BDBDBD;
+  border: 1px solid #BDBDBD;
+  border-radius: 46px;
+  transition: all ease-in-out 0.3s;
+  position: relative;
+  z-index: 0;
+  padding: 12px 42px;
+  border-radius: 49px;
+  font: 600 normal 1rem/1.5rem "Spectral SC";
+  text-transform: uppercase;
+  margin: 0 auto 16px auto;
+}
+.main__product-page-sidebar-button:hover {
+  transition: all ease-in-out 0.3s;
+  background: linear-gradient(102.48deg, #976464 -29.03%, #CFA5A5 97.75%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  border: 1px solid #CFA5A5;
+}
+.main__product-page-sidebar-button:active {
+  transition: all ease-in-out 0.3s;
+  background: linear-gradient(102.48deg, #976464 -29.03%, #CFA5A5 97.75%);
+  -webkit-background-clip: inherit;
+  -webkit-text-fill-color: white;
+  background-clip: inherit;
+  text-fill-color: white;
+  color: #FFFFFF;
+}
+.main__product-page-sidebar-button-style-color {
+  background: linear-gradient(102.48deg, #976464 -29.03%, #CFA5A5 97.75%);
+  border-radius: 49px;
+  padding: 13px 45px;
+  font: 600 normal 1rem/1.5rem "Spectral SC";
+  text-transform: uppercase;
+  color: #FFFFFF;
+  color: #FFFFFF;
+  display: block;
+  margin: 0 auto 16px auto;
+}
+.main__product-page-sidebar-button-style-color:hover {
+  background: linear-gradient(102.48deg, #7B4646 -29.03%, #BF9191 97.75%);
+}
+.main__product-page-sidebar-button-style-color:active {
+  background: linear-gradient(102.48deg, #976464 -29.03%, #CFA5A5 97.75%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.main__product-page-sidebar-message {
+  font: 400 normal 0.875rem "Montserrat";
+  line-height: 1.0625rem;
+  color: #BDBDBD;
+  text-align: center;
 }
 
 .footer {

@@ -56,44 +56,6 @@
             </div>
         </div>
     </section>
-    <div class="modal-regist" id="modal-regist">
-        <div class="modal__registration">
-                <div class="modal__registration-block">
-                        <a href="#" id="closeModal-regist" class="modal__registration-closeLink link-style">
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7 7L25 25" stroke="#EC6F5D" stroke-width="2"></path>
-                                <path d="M25 7L7 25" stroke="#EC6F5D" stroke-width="2"></path>
-                            </svg>
-                        </a>
-                        <div class="scroll_on">
-                            <form action="#" class="modal__registration-form" id="registration-form">
-                                <h2 class="modal__registration-form-label">
-                                    Регистрация
-                                </h2>
-                                <input type="text" name="name" id="user-name" placeholder="Имя">
-                                <input type="text" name="last-name" id="user-last-name" placeholder="Фамилия">
-                                <input type="text" name="sur-name" id="user-sur-name" placeholder="Отчество">
-                                <input type="tel" name="phone" id="user-phone" placeholder="Номер телефона">
-                                <input type="email" name="email" id="user-email" placeholder="E-mail">
-                                <input type="text" name="password" id="user-password" placeholder="Придумайте пароль">
-                                <input type="text" name="password-confirm" id="user-confirm-password" placeholder="Повторите пароль">
-                                <span class="modal__registration-form-message">Пароль должен содержать от 6 символов</span>
-                                <button class="modal__registration-form-button">Зарегистрироваться</button>
-                            </form>
-                            <div class="modal__registration-block-login">
-                                <p class="modal__registration-block-text">
-                                    Есть аккаунт?
-                                </p>
-                                <a href="login.html" class="modal__registration-block-button">
-                                    войти
-                                </a>
-                            </div>
-                        </div>
-            </div>
-    
-    
-        </div>
-    </div>
     <div class="modal" id="modal">
         <div class="modal__login">
             <div class="modal__registration-block login">
@@ -334,7 +296,7 @@
                         от 250 ₽
                     </p>
                     <div class="main__catalog-item-subitem">
-                        <a href="#" class="main__catalog-item-link">
+                        <a href="catalog-tovar.html" class="main__catalog-item-link" id="link-makrame">
                             Подробнее
                         </a>
                         <img src="img/catalog-img-pink.png" alt="image catalog">
@@ -675,10 +637,8 @@
         </form>
     </div>
 </script>
+
 <script src="js/modal-registration.js" defer></script>
-
-
-<script src="js/modal.js" defer></script>
 
 </body>
 </html>
