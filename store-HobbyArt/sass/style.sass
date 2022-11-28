@@ -112,6 +112,7 @@ body
         @include headerContactsIcon (url('../img/basket.svg'), 12px, 20px)
       &:after
         @include headerContactEllipse ('1', -6px, calc(100% - 13%))
+
     &-nav
       @media screen and (max-width: 780px)
         display: none
@@ -753,6 +754,82 @@ body
       &-message
         @include textSmall (0.875rem, 1.0625rem, $grayLinkColor)
         text-align: center
+    &-content
+      display: flex
+      column-gap: 30px
+      row-gap: 30px
+      flex-wrap: wrap
+      align-items: center
+      justify-content: flex-start
+      width: 100%
+      &-item
+        padding: 30px
+        background: $colorTextButton
+        box-shadow: 0px 0px 30px rgba(68, 68, 68, 0.05)
+        border-radius: 20px
+        width: calc(20% - 30px)
+        &-header
+          display: flex
+          justify-content: space-between
+          align-items: center
+          margin-bottom: 13px
+          & svg
+            fill: red
+            cursor: pointer
+            &.red-color:hover
+              & path
+                fill: red
+        &-img
+          max-width: 200px
+          height: 150px
+          margin-bottom: 16px
+          overflow: hidden
+          display: flex
+          & img
+            width: 100%
+            height: auto
+            object-fit: contain
+        &-label
+          @include textSmall (1rem, 1.0625rem, $colorTextMain)
+          @include textBlock-width (166px)
+          height: 40px
+          margin-bottom: 17px
+        &-color-variants
+          margin-bottom: 18px
+          cursor: pointer
+        &-price
+          display: block
+          @include textMenuBold
+          margin-bottom: 16px
+          @include textBlock-width (166px)
+          height: 20px
+          &.price-old
+            text-decoration: line-through
+            font-weight: 400
+          & .price-sale
+            margin-left: 10px
+            display: inline-block
+            @include textMenuBold
+            background: linear-gradient(102.48deg, #976464 -29.03%, #CFA5A5 97.75%)
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+            background-clip: text
+            text-fill-color: transparent
+        &-btnBuy
+          position: relative
+          @include buttonWithBorder
+          padding: 10px 0
+          text-align: center
+          //&:active
+          //  fill: white
+          &:before
+            @include headerContactsIcon (url('../img/basket.svg'), calc(50% - 8.5px), 15%)
+
+
+
+
+
+
           
 
 
