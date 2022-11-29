@@ -2493,13 +2493,15 @@ body {
   object-fit: contain;
 }
 .main__product-page-content-item-label {
-  font: 400 normal 1rem "Montserrat";
-  line-height: 1.0625rem;
-  color: #424242;
   max-width: 166px;
   overflow: hidden;
   height: 40px;
   margin-bottom: 17px;
+}
+.main__product-page-content-item-label a {
+  font: 400 normal 1rem "Montserrat";
+  line-height: 1.0625rem;
+  color: #424242;
 }
 .main__product-page-content-item-color-variants {
   margin-bottom: 18px;

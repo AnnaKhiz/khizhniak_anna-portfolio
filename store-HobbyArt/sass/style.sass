@@ -793,10 +793,11 @@ body
             height: auto
             object-fit: contain
         &-label
-          @include textSmall (1rem, 1.0625rem, $colorTextMain)
           @include textBlock-width (166px)
           height: 40px
           margin-bottom: 17px
+          & a
+            @include textSmall (1rem, 1.0625rem, $colorTextMain)
         &-color-variants
           margin-bottom: 18px
           cursor: pointer
